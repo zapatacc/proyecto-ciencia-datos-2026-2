@@ -226,6 +226,10 @@ mlruns/
 mlartifacts/
 *.db
 
+# Student practice copies inside the public course repository
+/labs/trabajo-local/*
+!/labs/trabajo-local/.gitkeep
+
 # Local credentials and notebooks
 .env.*
 !.env.example

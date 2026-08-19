@@ -4,13 +4,13 @@ Horario efectivo: 20:10–21:50. Los festivos conservan el número de bloque, pe
 
 | # | Fecha | Clase |
 |---:|---|---|
-| 1 | Lun 17 ago | Bienvenida, guía de aprendizaje y verificación técnica |
-| 2 | Mié 19 ago | Python en VS Code |
-| 3 | Lun 24 ago | Git Bash, terminal y Git local |
-| 4 | Mié 26 ago | GitHub, entornos y dependencias |
-| 5 | Lun 31 ago | Cómo se comunican las aplicaciones |
-| 6 | Mié 2 sep | Primera aplicación FastAPI |
-| 7 | Lun 7 sep | Primera API de predicción |
+| 1 | Lun 17 ago | [Bienvenida, guía de aprendizaje y verificación técnica](../modulo-01-fundamentos/clase-01-bienvenida.ipynb) |
+| 2 | Mié 19 ago | [Python, terminal y primer flujo Git/GitHub](../modulo-01-fundamentos/clase-02-python-vscode.ipynb) |
+| 3 | Lun 24 ago | Revisión de PR, colaboración y ambientes |
+| 4 | Mié 26 ago | Cómo se comunican las aplicaciones |
+| 5 | Lun 31 ago | Primera aplicación FastAPI |
+| 6 | Mié 2 sep | Primera API de predicción |
+| 7 | Lun 7 sep | Integración del módulo y preparación del proyecto |
 | 8 | Mié 9 sep | Introducción a MLOps |
 | 9 | Lun 14 sep | Niveles de madurez |
 | 10 | Mié 16 sep | Festivo — sin clase ni entrega |
@@ -37,4 +37,4 @@ Horario efectivo: 20:10–21:50. Los festivos conservan el número de bloque, pe
 | 31 | Lun 30 nov | Presentaciones A |
 | 32 | Mié 2 dic | Presentaciones B y cierre |
 
-Las horas límite de las entregas se publicarán en el LMS. No se programarán entregas en los bloques festivos.
+Las horas límite de las entregas se publicarán en Canvas. No se programarán entregas en los bloques festivos.

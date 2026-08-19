@@ -102,6 +102,10 @@ Una calificación con decimal menor o igual a 5 se redondeará al entero inferio
 
 Todas las tareas, trabajos, actividades, quices, exámenes y entregas del proyecto se realizan exclusivamente en el espacio correspondiente de Canvas. No se aceptan entregas por correo, Teams, mensajes privados u otros medios.
 
+Para las tareas individuales se mantendrá un único repositorio privado por estudiante durante el semestre. Cada tarea se realizará en la rama indicada y deberá dejar como evidencia un pull request hacia `main` que haya sido revisado, fusionado y cerrado. Cerrar un PR sin hacer merge o dejarlo abierto no constituye una entrega terminada. En Canvas se entregará la URL del PR cerrado y fusionado. El procedimiento completo se encuentra en [Flujo de trabajo y entrega de tareas](flujo-tareas.md).
+
+El proyecto en equipo utilizará un repositorio privado separado. Las instrucciones particulares pueden pedir evidencias adicionales, pero Canvas seguirá siendo el medio oficial.
+
 - Una hora o menos de retraso: calificación máxima de 8.
 - Más de una hora y hasta dos horas: calificación máxima de 7.
 - Dos horas o más: se revisa y devuelve con correcciones, pero no recibe calificación.

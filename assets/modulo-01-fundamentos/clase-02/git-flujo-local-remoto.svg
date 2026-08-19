@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc" data-course-asset="modulo-01-clase-02">
+  <title id="title">Flujo de cambios entre el equipo local y GitHub</title>
+  <desc id="desc">Un archivo pasa del directorio de trabajo al área de staging con git add y después al repositorio local con git commit. Git push publica commits en el repositorio remoto, git pull trae cambios y git clone crea la primera copia local.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#334155"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#2563eb"/>
+    </marker>
+    <style>
+      .title { font: 700 31px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #0f172a; }
+      .zone { font: 700 19px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #334155; }
+      .box-title { font: 700 24px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #0f172a; }
+      .body { font: 18px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #334155; }
+      .command { font: 700 18px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #0f172a; }
+      .note { font: 17px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #475569; }
+      .arrow { fill: none; stroke: #334155; stroke-width: 3; marker-end: url(#arrow); }
+      .arrow-blue { fill: none; stroke: #2563eb; stroke-width: 3; marker-end: url(#arrow-blue); }
+      .label-bg { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="900" fill="#ffffff"/>
+  <text x="600" y="52" text-anchor="middle" class="title">Del archivo local al repositorio remoto</text>
+
+  <rect x="40" y="88" width="660" height="674" rx="20" fill="#f8fafc" stroke="#94a3b8" stroke-width="2" stroke-dasharray="9 7"/>
+  <text x="68" y="124" class="zone">Tu equipo — Git funciona localmente</text>
+
+  <rect x="90" y="154" width="560" height="150" rx="16" fill="#dbeafe" stroke="#60a5fa" stroke-width="2"/>
+  <text x="370" y="198" text-anchor="middle" class="box-title">Directorio de trabajo</text>
+  <text x="370" y="233" text-anchor="middle" class="body">Archivos que editas y guardas en VS Code</text>
+  <text x="370" y="270" text-anchor="middle" class="command">actividad.py</text>
+
+  <path d="M370 304 L370 350" class="arrow"/>
+  <rect x="397" y="316" width="112" height="30" rx="15" class="label-bg"/>
+  <text x="453" y="337" text-anchor="middle" class="command">git add</text>
+
+  <rect x="90" y="360" width="560" height="150" rx="16" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="370" y="404" text-anchor="middle" class="box-title">Área de staging</text>
+  <text x="370" y="439" text-anchor="middle" class="body">Selección exacta para el próximo commit</text>
+  <text x="370" y="476" text-anchor="middle" class="command">git add</text>
+
+  <path d="M370 510 L370 556" class="arrow"/>
+  <rect x="397" y="522" width="145" height="30" rx="15" class="label-bg"/>
+  <text x="469" y="543" text-anchor="middle" class="command">git commit</text>
+
+  <rect x="90" y="566" width="560" height="150" rx="16" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+  <text x="370" y="610" text-anchor="middle" class="box-title">Repositorio local</text>
+  <text x="370" y="645" text-anchor="middle" class="body">Commits, ramas e historial guardados en .git</text>
+  <text x="370" y="682" text-anchor="middle" class="command">git commit</text>
+
+  <rect x="735" y="476" width="425" height="286" rx="20" fill="#faf5ff" stroke="#a78bfa" stroke-width="2" stroke-dasharray="9 7"/>
+  <text x="762" y="512" class="zone">GitHub — requiere conexión</text>
+
+  <rect x="785" y="546" width="325" height="170" rx="18" fill="#ede9fe" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="947" y="590" text-anchor="middle" class="box-title">Repositorio remoto</text>
+  <text x="947" y="622" text-anchor="middle" class="command">origin</text>
+  <text x="947" y="654" text-anchor="middle" class="body">Ramas publicadas</text>
+  <text x="947" y="681" text-anchor="middle" class="body">y pull requests</text>
+
+  <path d="M650 608 L778 608" class="arrow-blue"/>
+  <rect x="660" y="567" width="116" height="29" rx="14" class="label-bg"/>
+  <text x="718" y="588" text-anchor="middle" class="command">git push</text>
+
+  <path d="M785 681 L657 681" class="arrow-blue"/>
+  <rect x="664" y="693" width="114" height="29" rx="14" class="label-bg"/>
+  <text x="721" y="714" text-anchor="middle" class="command">git pull</text>
+
+  <path d="M947 546 C1010 394 1000 229 657 229" class="arrow"/>
+  <rect x="804" y="326" width="270" height="88" rx="14" class="label-bg"/>
+  <text x="939" y="352" text-anchor="middle" class="command">git clone</text>
+  <text x="939" y="378" text-anchor="middle" class="body">crea la primera</text>
+  <text x="939" y="402" text-anchor="middle" class="body">copia local</text>
+
+  <rect x="60" y="800" width="1080" height="70" rx="14" fill="#f1f5f9" stroke="#cbd5e1"/>
+  <text x="600" y="828" text-anchor="middle" class="note">Guardar un archivo no crea un commit; crear un commit no lo publica en GitHub.</text>
+  <text x="600" y="854" text-anchor="middle" class="note">El pull request y el merge ocurren en GitHub; después, git pull actualiza tu rama local.</text>
+</svg>

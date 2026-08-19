@@ -8,57 +8,60 @@ Material activo del curso **Proyecto en Ciencia de Datos**. El semestre recorre 
 2. **Del modelo al producto: diseño y trazabilidad MLOps** (`modulo-02-ciclo-mlops/`).
 3. **De local a producción: contenedores, nube y operación** (`modulo-03-produccion/`).
 
-La orientación principal para estudiantes está en [`docs/guia-de-aprendizaje.md`](docs/guia-de-aprendizaje.md). Las fechas viven en [`docs/calendario-2026.md`](docs/calendario-2026.md) y las políticas complementarias en [`docs/syllabus.md`](docs/syllabus.md).
+La orientación principal para estudiantes está en [`docs/guia-de-aprendizaje.md`](docs/guia-de-aprendizaje.md). Las fechas viven en [`docs/calendario-2026.md`](docs/calendario-2026.md), el procedimiento de entrega en [`docs/flujo-tareas.md`](docs/flujo-tareas.md) y las políticas complementarias en [`docs/syllabus.md`](docs/syllabus.md).
 
-## Primer contacto — clases 1 y 2
+## Cómo utilizar este repositorio
 
-Para comenzar se requieren Git, Git Bash o una terminal, Visual Studio Code y Python 3.12. Si falta alguna herramienta, consulta la guía de [Windows](docs/setup/windows.md) o [macOS/Linux](docs/setup/macos-linux.md).
+El profesor publicará aquí notebooks, lecturas, starters y recursos del curso. Para comenzar se requieren Git, Git Bash en Windows o una terminal compatible en macOS/Linux, Visual Studio Code y Python 3.12. Las guías de instalación están disponibles para [Windows](docs/setup/windows.md) y [macOS/Linux](docs/setup/macos-linux.md).
 
-Se recomienda mantener todo el trabajo del curso en una carpeta local que no esté sincronizada con OneDrive. El repositorio contiene los notebooks y recursos que el profesor irá publicando; las tareas y el proyecto pueden guardarse en carpetas separadas.
-
-Como ejemplo, desde el Explorador de archivos o Finder puedes crear `cursos/proyecto-ciencia-datos` y dentro las carpetas `tareas` y `proyecto`. Esta estructura es sólo una sugerencia: puedes elegir cualquier ubicación local y los nombres que prefieras. Abre en VS Code la carpeta que hayas elegido mediante **Archivo > Abrir carpeta...** y ejecuta en la terminal integrada:
+Clona el repositorio en una ruta local fuera de OneDrive u otras carpetas sincronizadas:
 
 ```bash
 git clone https://github.com/zapatacc/proyecto-ciencia-datos-2026-2.git
 ```
 
-Cuando termine, abre manualmente `proyecto-ciencia-datos-2026-2` desde VS Code. En una nueva terminal integrada ejecuta:
+Antes de cada clase, abre una terminal dentro del repositorio y obtén el material más reciente con `git pull`. No hagas commits ni push desde este repositorio.
 
-```bash
-python labs/starters/clase-01-bienvenida/primeras_funciones.py
+## Espacios de trabajo
+
+Durante el semestre se utilizan tres espacios con propósitos diferentes:
+
+1. `proyecto-ciencia-datos-2026-2`: repositorio público con el material publicado por el profesor.
+2. `pcd-entregas-2026`: repositorio privado individual para tareas y actividades que indiquen explícitamente un flujo Git.
+3. `proyecto`: repositorio privado del equipo para el proyecto integrador, cuando se indique.
+
+Se recomienda mantenerlos al mismo nivel dentro de una ruta local. La estructura siguiente es sólo un ejemplo:
+
+```text
+cursos/
+└── proyecto-ciencia-datos/
+    ├── proyecto-ciencia-datos-2026-2/
+    ├── pcd-entregas-2026/
+    └── proyecto/
 ```
 
-En macOS o Linux puede ser necesario usar `python3` en lugar de `python`.
+### Prácticas no calificables
 
-## Ambiente docente canónico
+Los archivos publicados en `labs/starters/` se conservan como originales de referencia. Cuando una práctica no calificable requiera modificaciones, copia el starter indicado a `labs/trabajo-local/clase-XX/`. Esta carpeta está ignorada por Git: no requiere rama, commit, push, pull request ni entrega en Canvas.
 
-El mantenimiento y la validación reproducible del repositorio sí utilizan [uv](https://docs.astral.sh/uv/):
+### Tareas
 
-```bash
-uv sync --locked
-uv run jupyter lab
+Cada tarea vive en su propia carpeta y rama dentro de `pcd-entregas-2026`. El flujo termina con un pull request revisado, fusionado a `main` y cerrado; la entrega oficial se realiza mediante Canvas. Consulta el [flujo completo de tareas](docs/flujo-tareas.md) y las instrucciones particulares publicadas en `docs/tareas/`.
+
+## Organización del repositorio
+
+```text
+modulo-01-fundamentos/   # construcción y colaboración inicial
+modulo-02-ciclo-mlops/   # diseño, trazabilidad y ciclo de ML
+modulo-03-produccion/    # despliegue y operación
+labs/
+├── starters/            # archivos iniciales publicados
+└── trabajo-local/       # copias locales ignoradas por Git
+assets/                  # recursos visuales organizados por módulo y clase
+docs/                    # calendario, políticas, guías y tareas
 ```
 
-Para comprobar el material disponible:
-
-```bash
-uv run python tools/validation/validate_notebooks.py
-uv run ruff check .
-```
-
-## Material disponible
-
-- [`clase-01-bienvenida.ipynb`](modulo-01-fundamentos/clase-01-bienvenida.ipynb): bienvenida, socialización de la guía de aprendizaje y preparación del espacio local de trabajo.
-- [`clase-02-python-vscode.ipynb`](modulo-01-fundamentos/clase-02-python-vscode.ipynb): repaso compacto de Python mediante una actividad de viajes.
-- `labs/starters/`: archivos que modifica el estudiantado.
-- `labs/solutions/`: soluciones de referencia; el docente decide cuándo publicarlas.
-- `templates/` y `project/templates/`: plantillas para crear clases, laboratorios y asesorías posteriores.
-
-## Estado de construcción
-
-Este repositorio contiene únicamente las fases 0 y 1 del plan de implementación y los borradores de las dos primeras clases solicitadas. El ejemplo canónico de NYC Taxi aún no se implementa: corresponde a la fase 2.
-
-La migración es curada. El material 2025 no se copia en bloque; su procedencia y decisiones están registradas en [`docs/source-map.md`](docs/source-map.md) y [`docs/origen-2025.md`](docs/origen-2025.md).
+Los notebooks y materiales disponibles se enlazan progresivamente desde el [calendario del curso](docs/calendario-2026.md) y los README de cada módulo.
 
 ## Licencia
 
