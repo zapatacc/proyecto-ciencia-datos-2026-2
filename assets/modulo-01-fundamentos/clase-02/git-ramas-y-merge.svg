@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc" data-course-asset="modulo-01-clase-02">
+  <title id="title">Cómo una rama de Git se separa de main y vuelve mediante merge</title>
+  <desc id="desc">Tres momentos del historial. Primero main señala el commit B. Después la rama feat resumen viajes nace en B y avanza con los commits C y D mientras main permanece en B. Finalmente un pull request integra la rama mediante el merge commit M y main avanza hasta M.</desc>
+  <defs>
+    <marker id="arrow-main" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#334155"/>
+    </marker>
+    <marker id="arrow-feature" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#15803d"/>
+    </marker>
+    <style>
+      .title { font: 700 31px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #0f172a; }
+      .subtitle { font: 18px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #475569; }
+      .panel-title { font: 700 22px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #0f172a; }
+      .body { font: 17px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #334155; }
+      .command { font: 700 16px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #0f172a; }
+      .tag { font: 700 15px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .commit { font: 700 15px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #ffffff; }
+      .main-line { fill: none; stroke: #334155; stroke-width: 4; marker-end: url(#arrow-main); }
+      .feature-line { fill: none; stroke: #15803d; stroke-width: 4; marker-end: url(#arrow-feature); }
+    </style>
+  </defs>
+
+  <rect width="1200" height="720" fill="#ffffff"/>
+  <text x="600" y="48" text-anchor="middle" class="title">Una rama permite avanzar sin mover <tspan font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">main</tspan></text>
+  <text x="600" y="82" text-anchor="middle" class="subtitle">Las tres tarjetas son momentos sucesivos del mismo historial.</text>
+
+  <rect x="40" y="115" width="350" height="490" rx="20" fill="#f8fafc" stroke="#94a3b8" stroke-width="2"/>
+  <text x="215" y="158" text-anchor="middle" class="panel-title">1. Punto de partida</text>
+
+  <path d="M105 280 L285 280" class="main-line"/>
+  <circle cx="135" cy="280" r="24" fill="#475569"/>
+  <text x="135" y="286" text-anchor="middle" class="commit">A</text>
+  <circle cx="270" cy="280" r="24" fill="#475569"/>
+  <text x="270" y="286" text-anchor="middle" class="commit">B</text>
+
+  <rect x="225" y="211" width="90" height="34" rx="17" fill="#e2e8f0" stroke="#64748b"/>
+  <text x="270" y="233" text-anchor="middle" class="tag" fill="#334155">main</text>
+  <path d="M270 245 L270 251" stroke="#64748b" stroke-width="2"/>
+
+  <text x="215" y="350" text-anchor="middle" class="body">La rama principal señala</text>
+  <text x="215" y="376" text-anchor="middle" class="body">el último commit: B.</text>
+
+  <rect x="72" y="442" width="286" height="66" rx="14" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="215" y="469" text-anchor="middle" class="command">git switch -c</text>
+  <text x="215" y="493" text-anchor="middle" class="command">feat/resumen-viajes</text>
+  <text x="215" y="550" text-anchor="middle" class="body">Aquí nace la nueva rama.</text>
+
+  <rect x="425" y="115" width="350" height="490" rx="20" fill="#f0fdf4" stroke="#86efac" stroke-width="2"/>
+  <text x="600" y="158" text-anchor="middle" class="panel-title">2. La rama avanza</text>
+
+  <circle cx="485" cy="255" r="24" fill="#475569"/>
+  <text x="485" y="261" text-anchor="middle" class="commit">B</text>
+  <rect x="440" y="187" width="90" height="34" rx="17" fill="#e2e8f0" stroke="#64748b"/>
+  <text x="485" y="209" text-anchor="middle" class="tag" fill="#334155">main</text>
+  <path d="M485 221 L485 226" stroke="#64748b" stroke-width="2"/>
+
+  <path d="M493 276 C515 343 535 380 570 398" class="feature-line"/>
+  <path d="M585 405 L690 405" class="feature-line"/>
+  <circle cx="575" cy="405" r="24" fill="#15803d"/>
+  <text x="575" y="411" text-anchor="middle" class="commit">C</text>
+  <circle cx="680" cy="405" r="24" fill="#15803d"/>
+  <text x="680" y="411" text-anchor="middle" class="commit">D</text>
+
+  <rect x="535" y="455" width="230" height="34" rx="17" fill="#dcfce7" stroke="#22c55e"/>
+  <text x="650" y="477" text-anchor="middle" class="tag" fill="#166534">feat/resumen-viajes</text>
+  <path d="M680 429 L680 455" stroke="#22c55e" stroke-width="2"/>
+
+  <text x="600" y="535" text-anchor="middle" class="body">Los commits C y D avanzan</text>
+  <text x="600" y="561" text-anchor="middle" class="body">la rama activa; main sigue en B.</text>
+
+  <rect x="810" y="115" width="350" height="490" rx="20" fill="#faf5ff" stroke="#c4b5fd" stroke-width="2"/>
+  <text x="985" y="158" text-anchor="middle" class="panel-title">3. Pull request y merge</text>
+
+  <circle cx="865" cy="260" r="24" fill="#475569"/>
+  <text x="865" y="266" text-anchor="middle" class="commit">B</text>
+  <path d="M889 260 L1100 260" class="main-line"/>
+
+  <path d="M873 282 C895 345 910 380 940 400" class="feature-line"/>
+  <path d="M955 405 L1025 405" class="feature-line"/>
+  <path d="M1040 400 C1075 378 1093 335 1100 291" class="feature-line"/>
+  <circle cx="945" cy="405" r="24" fill="#15803d"/>
+  <text x="945" y="411" text-anchor="middle" class="commit">C</text>
+  <circle cx="1030" cy="405" r="24" fill="#15803d"/>
+  <text x="1030" y="411" text-anchor="middle" class="commit">D</text>
+
+  <rect x="1081" y="241" width="38" height="38" rx="6" transform="rotate(45 1100 260)" fill="#7c3aed" stroke="#5b21b6" stroke-width="2"/>
+  <text x="1100" y="266" text-anchor="middle" class="commit">M</text>
+  <rect x="1055" y="176" width="90" height="34" rx="17" fill="#ede9fe" stroke="#8b5cf6"/>
+  <text x="1100" y="198" text-anchor="middle" class="tag" fill="#5b21b6">main</text>
+  <path d="M1100 210 L1100 230" stroke="#8b5cf6" stroke-width="2"/>
+
+  <text x="985" y="475" text-anchor="middle" class="body">M conserva la unión de ambas</text>
+  <text x="985" y="501" text-anchor="middle" class="body">líneas y main avanza hasta allí.</text>
+  <rect x="865" y="533" width="240" height="42" rx="21" fill="#ede9fe" stroke="#8b5cf6"/>
+  <text x="985" y="560" text-anchor="middle" class="command">PR: Merged</text>
+
+  <rect x="95" y="640" width="1010" height="52" rx="14" fill="#f1f5f9" stroke="#cbd5e1"/>
+  <text x="600" y="672" text-anchor="middle" class="body">Una rama es una referencia móvil a un commit; no duplica físicamente la carpeta del proyecto.</text>
+</svg>
