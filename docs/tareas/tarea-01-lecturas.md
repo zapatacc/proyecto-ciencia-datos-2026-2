@@ -94,13 +94,13 @@ Cerrar el PR sin hacer merge no cumple el requisito. Consulta el [flujo general 
 
 ## Entrega en Canvas
 
-**Fecha y hora límite:** consulta la actividad correspondiente en Canvas.
+**Fecha y hora límite:** lunes 24 de agosto de 2026 a las 19:55, hora de Ciudad de México. Canvas es la fuente oficial si se comunica algún ajuste.
 
 Entrega en el espacio correspondiente:
 
 - la URL del pull request cerrado y fusionado.
 
-Canvas es la fuente oficial si se comunica algún ajuste. Aplican las políticas de entrega tardía de la guía de aprendizaje.
+Aplican las políticas de entrega tardía de la guía de aprendizaje.
 
 ## Uso de herramientas
 
