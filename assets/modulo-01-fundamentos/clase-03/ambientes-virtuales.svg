@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500" role="img" aria-labelledby="title desc">
+  <title id="title">Comparación entre una instalación global y ambientes virtuales independientes</title>
+  <desc id="desc">Dos proyectos entran en conflicto cuando comparten una instalación global. Con un ambiente virtual por proyecto, cada uno conserva la versión de la biblioteca que necesita.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#334155"/>
+    </marker>
+    <style>
+      .title { font: 700 29px system-ui, sans-serif; fill: #172554; }
+      .section { font: 700 21px system-ui, sans-serif; fill: #172554; }
+      .label { font: 700 17px system-ui, sans-serif; fill: #0f172a; }
+      .text { font: 15px system-ui, sans-serif; fill: #334155; }
+      .small { font: 13px system-ui, sans-serif; fill: #475569; }
+      .mono { font: 14px ui-monospace, SFMono-Regular, Menlo, monospace; fill: #0f172a; }
+      .white { fill: #ffffff; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="500" rx="24" fill="#f8fafc"/>
+  <text x="600" y="42" text-anchor="middle" class="title">Por qué aislar las dependencias de cada proyecto</text>
+
+  <rect x="30" y="68" width="550" height="400" rx="20" fill="#fff7ed" stroke="#c2410c" stroke-width="3"/>
+  <text x="305" y="102" text-anchor="middle" class="section">Sin ambientes virtuales</text>
+  <text x="305" y="127" text-anchor="middle" class="text">Dos proyectos comparten el mismo espacio de paquetes.</text>
+
+  <rect x="65" y="154" width="205" height="95" rx="14" fill="#ffffff" stroke="#64748b" stroke-width="2"/>
+  <text x="168" y="185" text-anchor="middle" class="label">Proyecto de análisis</text>
+  <text x="168" y="215" text-anchor="middle" class="mono">biblioteca X 1.x</text>
+  <text x="168" y="237" text-anchor="middle" class="small">versión que necesita</text>
+
+  <rect x="340" y="154" width="205" height="95" rx="14" fill="#ffffff" stroke="#64748b" stroke-width="2"/>
+  <text x="443" y="185" text-anchor="middle" class="label">Proyecto de API</text>
+  <text x="443" y="215" text-anchor="middle" class="mono">biblioteca X 2.x</text>
+  <text x="443" y="237" text-anchor="middle" class="small">versión incompatible</text>
+
+  <path d="M168 249 L245 286" fill="none" stroke="#334155" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M443 249 L365 286" fill="none" stroke="#334155" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <rect x="145" y="291" width="320" height="145" rx="16" fill="#ffedd5" stroke="#c2410c" stroke-width="3"/>
+  <text x="305" y="324" text-anchor="middle" class="label">Python global</text>
+  <text x="305" y="351" text-anchor="middle" class="text">Un solo espacio para instalar paquetes</text>
+  <text x="305" y="375" text-anchor="middle" class="mono">sólo queda una versión de X</text>
+  <rect x="180" y="392" width="250" height="32" rx="16" fill="#c2410c"/>
+  <text x="305" y="414" text-anchor="middle" class="label white">un proyecto puede romperse</text>
+
+  <rect x="620" y="68" width="550" height="400" rx="20" fill="#eff6ff" stroke="#2563eb" stroke-width="3"/>
+  <text x="895" y="102" text-anchor="middle" class="section">Con un ambiente virtual por proyecto</text>
+  <text x="895" y="127" text-anchor="middle" class="text">Cada proyecto conserva su propio espacio de paquetes.</text>
+
+  <rect x="660" y="154" width="470" height="112" rx="16" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+  <text x="687" y="185" class="label">Proyecto de análisis/</text>
+  <rect x="685" y="199" width="420" height="48" rx="10" fill="#dbeafe"/>
+  <text x="705" y="229" class="mono">.venv/  →  Python 3.12 + biblioteca X 1.x</text>
+
+  <rect x="660" y="292" width="470" height="112" rx="16" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+  <text x="687" y="323" class="label">Proyecto de API/</text>
+  <rect x="685" y="337" width="420" height="48" rx="10" fill="#dbeafe"/>
+  <text x="705" y="367" class="mono">.venv/  →  Python 3.12 + biblioteca X 2.x</text>
+
+  <rect x="729" y="420" width="332" height="30" rx="15" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="895" y="440" text-anchor="middle" class="small">Instalar en un ambiente virtual no modifica el otro.</text>
+</svg>

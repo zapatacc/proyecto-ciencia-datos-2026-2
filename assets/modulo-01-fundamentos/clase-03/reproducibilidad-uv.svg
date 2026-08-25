@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+  <title id="title">Cómo se reconstruye un ambiente virtual con Git y uv</title>
+  <desc id="desc">Los archivos punto python version, pyproject toml y uv lock se comparten con Git. En otra computadora, uv sync locked reconstruye punto venv y uv run python ejecuta dentro de ese ambiente virtual.</desc>
+  <defs>
+    <marker id="flow-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#334155"/>
+    </marker>
+    <style>
+      .title { font: 700 28px system-ui, sans-serif; fill: #172554; }
+      .section { font: 700 20px system-ui, sans-serif; fill: #172554; }
+      .label { font: 700 17px system-ui, sans-serif; fill: #0f172a; }
+      .text { font: 15px system-ui, sans-serif; fill: #334155; }
+      .small { font: 13px system-ui, sans-serif; fill: #475569; }
+      .mono { font: 14px ui-monospace, SFMono-Regular, Menlo, monospace; fill: #0f172a; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="430" rx="24" fill="#f8fafc"/>
+  <text x="600" y="43" text-anchor="middle" class="title">Los archivos viajan; el ambiente virtual se reconstruye</text>
+
+  <rect x="35" y="72" width="355" height="310" rx="20" fill="#eff6ff" stroke="#2563eb" stroke-width="3"/>
+  <text x="213" y="108" text-anchor="middle" class="section">1. Receta versionada en Git</text>
+
+  <rect x="70" y="132" width="285" height="58" rx="12" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+  <text x="90" y="157" class="mono">.python-version</text>
+  <text x="90" y="178" class="small">Python preferido: 3.12</text>
+
+  <rect x="70" y="208" width="285" height="58" rx="12" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+  <text x="90" y="233" class="mono">pyproject.toml</text>
+  <text x="90" y="254" class="small">dependencias directas aceptadas</text>
+
+  <rect x="70" y="284" width="285" height="58" rx="12" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+  <text x="90" y="309" class="mono">uv.lock</text>
+  <text x="90" y="330" class="small">resolución exacta y transitiva</text>
+
+  <path d="M390 227 L475 227" fill="none" stroke="#334155" stroke-width="3" marker-end="url(#flow-arrow)"/>
+  <text x="433" y="210" text-anchor="middle" class="small">git clone / pull</text>
+
+  <rect x="480" y="118" width="270" height="218" rx="20" fill="#ecfdf5" stroke="#047857" stroke-width="3"/>
+  <text x="615" y="154" text-anchor="middle" class="section">2. Reconstrucción local</text>
+  <rect x="515" y="181" width="200" height="68" rx="34" fill="#ffffff" stroke="#047857" stroke-width="2"/>
+  <text x="615" y="208" text-anchor="middle" class="label">uv</text>
+  <text x="615" y="232" text-anchor="middle" class="mono">uv sync --locked</text>
+  <rect x="530" y="270" width="170" height="42" rx="12" fill="#d1fae5"/>
+  <text x="615" y="297" text-anchor="middle" class="mono">crea .venv/</text>
+
+  <path d="M750 227 L835 227" fill="none" stroke="#334155" stroke-width="3" marker-end="url(#flow-arrow)"/>
+  <text x="793" y="210" text-anchor="middle" class="small">ambiente listo</text>
+
+  <rect x="840" y="92" width="325" height="270" rx="20" fill="#fff7ed" stroke="#c2410c" stroke-width="3"/>
+  <text x="1003" y="128" text-anchor="middle" class="section">3. Ejecutar dentro de .venv/</text>
+
+  <rect x="870" y="151" width="265" height="70" rx="12" fill="#ffffff" stroke="#c2410c" stroke-width="2"/>
+  <text x="1003" y="176" text-anchor="middle" class="label">Comando del estudiante</text>
+  <text x="1003" y="203" text-anchor="middle" class="mono">uv run python script.py</text>
+
+  <rect x="870" y="241" width="265" height="96" rx="12" fill="#ffedd5" stroke="#c2410c" stroke-width="2"/>
+  <text x="1003" y="266" text-anchor="middle" class="label">Recursos que usa el script</text>
+  <text x="1003" y="291" text-anchor="middle" class="mono">Python: .venv/.../python</text>
+  <text x="1003" y="316" text-anchor="middle" class="small">paquetes: versiones fijadas en uv.lock</text>
+
+  <text x="600" y="405" text-anchor="middle" class="text">.venv/ permanece local y fuera de Git porque puede reconstruirse desde los tres archivos versionados.</text>
+</svg>
