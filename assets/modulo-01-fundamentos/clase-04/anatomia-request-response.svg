@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="760" viewBox="0 0 1300 760" role="img" aria-labelledby="title desc">
+  <title id="title">Anatomía comparada de una solicitud y una respuesta HTTP</title>
+  <desc id="desc">A la izquierda, una solicitud HTTP separada en línea inicial con método y destino, headers, línea vacía y body opcional. A la derecha, una respuesta separada en línea de estado, headers, línea vacía y body.</desc>
+  <defs>
+    <style>
+      .title { font: 700 31px system-ui, sans-serif; fill: #172554; }
+      .heading { font: 700 23px system-ui, sans-serif; fill: #0f172a; }
+      .label { font: 700 17px system-ui, sans-serif; fill: #0f172a; }
+      .text { font: 15px system-ui, sans-serif; fill: #334155; }
+      .mono { font: 16px ui-monospace, SFMono-Regular, Menlo, monospace; fill: #0f172a; }
+    </style>
+  </defs>
+  <rect width="1300" height="760" rx="24" fill="#f8fafc"/>
+  <text x="650" y="50" text-anchor="middle" class="title">HTTP intercambia dos mensajes con estructura</text>
+
+  <text x="335" y="100" text-anchor="middle" class="heading">Request — solicitud del cliente</text>
+  <rect x="55" y="125" width="560" height="520" rx="20" fill="#ffffff" stroke="#0e7490" stroke-width="3"/>
+  <rect x="80" y="155" width="510" height="105" rx="12" fill="#ecfeff" stroke="#67e8f9"/>
+  <text x="100" y="184" class="label">1. Línea de solicitud</text>
+  <text x="100" y="220" class="mono">POST /predicciones?detalle=true HTTP/1.1</text>
+  <text x="100" y="246" class="text">método + destino (path y query) + versión</text>
+
+  <rect x="80" y="280" width="510" height="125" rx="12" fill="#eff6ff" stroke="#93c5fd"/>
+  <text x="100" y="309" class="label">2. Headers — metadatos</text>
+  <text x="100" y="345" class="mono">Host: 127.0.0.1:8000</text>
+  <text x="100" y="373" class="mono">Content-Type: application/json</text>
+  <text x="100" y="396" class="text">describen el mensaje; no son sus datos principales</text>
+
+  <rect x="80" y="425" width="510" height="52" rx="12" fill="#f1f5f9" stroke="#cbd5e1"/>
+  <text x="335" y="457" text-anchor="middle" class="label">3. Línea vacía: separa headers y body</text>
+
+  <rect x="80" y="497" width="510" height="120" rx="12" fill="#fefce8" stroke="#fde047"/>
+  <text x="100" y="526" class="label">4. Body opcional — datos enviados</text>
+  <text x="100" y="562" class="mono">{"distancia_km": 4.2, "pasajeros": 2}</text>
+  <text x="100" y="594" class="text">GET normalmente no necesita body; POST suele usarlo.</text>
+
+  <text x="965" y="100" text-anchor="middle" class="heading">Response — respuesta del servidor</text>
+  <rect x="685" y="125" width="560" height="520" rx="20" fill="#ffffff" stroke="#7c3aed" stroke-width="3"/>
+  <rect x="710" y="155" width="510" height="105" rx="12" fill="#faf5ff" stroke="#d8b4fe"/>
+  <text x="730" y="184" class="label">1. Línea de estado</text>
+  <text x="730" y="220" class="mono">HTTP/1.1 200 OK</text>
+  <text x="730" y="246" class="text">versión + código + frase descriptiva</text>
+
+  <rect x="710" y="280" width="510" height="125" rx="12" fill="#eff6ff" stroke="#93c5fd"/>
+  <text x="730" y="309" class="label">2. Headers — metadatos</text>
+  <text x="730" y="345" class="mono">content-type: application/json</text>
+  <text x="730" y="373" class="mono">content-length: 25</text>
+  <text x="730" y="396" class="text">indican cómo interpretar la respuesta</text>
+
+  <rect x="710" y="425" width="510" height="52" rx="12" fill="#f1f5f9" stroke="#cbd5e1"/>
+  <text x="965" y="457" text-anchor="middle" class="label">3. Línea vacía: separa headers y body</text>
+
+  <rect x="710" y="497" width="510" height="120" rx="12" fill="#f0fdf4" stroke="#86efac"/>
+  <text x="730" y="526" class="label">4. Body — representación o detalle del error</text>
+  <text x="730" y="562" class="mono">{"duracion_min": 18.6}</text>
+  <text x="730" y="594" class="text">el código resume; el body aporta los detalles</text>
+
+  <text x="650" y="700" text-anchor="middle" class="heading">Un mensaje no es sólo JSON: línea inicial, headers y body cumplen funciones distintas.</text>
+</svg>

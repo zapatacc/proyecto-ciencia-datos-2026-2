@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="560" viewBox="0 0 1320 560" role="img" aria-labelledby="title desc">
+  <title id="title">Familias de códigos de estado HTTP</title>
+  <desc id="desc">Cinco tarjetas muestran que el primer dígito agrupa los códigos HTTP: 1xx información, 2xx éxito, 3xx redirección, 4xx problema con la solicitud y 5xx falla del servidor. Incluyen ejemplos que se usarán en el curso.</desc>
+  <defs>
+    <style>
+      .title { font: 700 32px system-ui, sans-serif; fill: #172554; }
+      .subtitle { font: 17px system-ui, sans-serif; fill: #475569; }
+      .family { font: 800 34px system-ui, sans-serif; fill: #0f172a; }
+      .label { font: 700 20px system-ui, sans-serif; fill: #0f172a; }
+      .text { font: 15px system-ui, sans-serif; fill: #334155; }
+      .mono { font: 15px ui-monospace, SFMono-Regular, Menlo, monospace; fill: #0f172a; }
+    </style>
+  </defs>
+  <rect width="1320" height="560" rx="24" fill="#f8fafc"/>
+  <text x="660" y="52" text-anchor="middle" class="title">El primer dígito indica la familia del resultado</text>
+  <text x="660" y="82" text-anchor="middle" class="subtitle">El código resume qué ocurrió; headers y body aportan los detalles.</text>
+
+  <g transform="translate(35 120)">
+    <rect width="230" height="350" rx="20" fill="#f1f5f9" stroke="#64748b" stroke-width="3"/>
+    <circle cx="115" cy="68" r="42" fill="#e2e8f0" stroke="#64748b" stroke-width="3"/>
+    <text x="115" y="80" text-anchor="middle" class="family">1xx</text>
+    <text x="115" y="137" text-anchor="middle" class="label">Información</text>
+    <text x="115" y="178" text-anchor="middle" class="text">La conversación continúa;</text>
+    <text x="115" y="202" text-anchor="middle" class="text">aún no es el resultado final.</text>
+    <line x1="35" y1="228" x2="195" y2="228" stroke="#cbd5e1"/>
+    <text x="115" y="266" text-anchor="middle" class="mono">100 Continue</text>
+    <text x="115" y="306" text-anchor="middle" class="text">Poco común en nuestras</text>
+    <text x="115" y="330" text-anchor="middle" class="text">prácticas iniciales.</text>
+  </g>
+
+  <g transform="translate(290 120)">
+    <rect width="230" height="350" rx="20" fill="#f0fdf4" stroke="#15803d" stroke-width="3"/>
+    <circle cx="115" cy="68" r="42" fill="#dcfce7" stroke="#15803d" stroke-width="3"/>
+    <text x="115" y="80" text-anchor="middle" class="family">2xx</text>
+    <text x="115" y="137" text-anchor="middle" class="label">Éxito</text>
+    <text x="115" y="178" text-anchor="middle" class="text">El servidor aceptó y</text>
+    <text x="115" y="202" text-anchor="middle" class="text">procesó la solicitud.</text>
+    <line x1="35" y1="228" x2="195" y2="228" stroke="#86efac"/>
+    <text x="115" y="266" text-anchor="middle" class="mono">200 OK</text>
+    <text x="115" y="296" text-anchor="middle" class="mono">201 Created</text>
+    <text x="115" y="330" text-anchor="middle" class="text">Consulta o creación exitosa.</text>
+  </g>
+
+  <g transform="translate(545 120)">
+    <rect width="230" height="350" rx="20" fill="#eff6ff" stroke="#2563eb" stroke-width="3"/>
+    <circle cx="115" cy="68" r="42" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/>
+    <text x="115" y="80" text-anchor="middle" class="family">3xx</text>
+    <text x="115" y="137" text-anchor="middle" class="label">Redirección</text>
+    <text x="115" y="178" text-anchor="middle" class="text">El cliente necesita usar</text>
+    <text x="115" y="202" text-anchor="middle" class="text">otra ubicación o decisión.</text>
+    <line x1="35" y1="228" x2="195" y2="228" stroke="#93c5fd"/>
+    <text x="115" y="266" text-anchor="middle" class="mono">301 Moved Permanently</text>
+    <text x="115" y="306" text-anchor="middle" class="text">Suele incluir un header</text>
+    <text x="115" y="330" text-anchor="middle" class="mono">Location</text>
+  </g>
+
+  <g transform="translate(800 120)">
+    <rect width="230" height="350" rx="20" fill="#fff7ed" stroke="#c2410c" stroke-width="3"/>
+    <circle cx="115" cy="68" r="42" fill="#ffedd5" stroke="#c2410c" stroke-width="3"/>
+    <text x="115" y="80" text-anchor="middle" class="family">4xx</text>
+    <text x="115" y="137" text-anchor="middle" class="label">Solicitud no resuelta</text>
+    <text x="115" y="178" text-anchor="middle" class="text">Falta algo, no hay permiso</text>
+    <text x="115" y="202" text-anchor="middle" class="text">o la entrada no es válida.</text>
+    <line x1="35" y1="228" x2="195" y2="228" stroke="#fdba74"/>
+    <text x="115" y="260" text-anchor="middle" class="mono">400 · 401 · 403</text>
+    <text x="115" y="290" text-anchor="middle" class="mono">404 · 422</text>
+    <text x="115" y="330" text-anchor="middle" class="text">Revisar request y contrato.</text>
+  </g>
+
+  <g transform="translate(1055 120)">
+    <rect width="230" height="350" rx="20" fill="#fef2f2" stroke="#b91c1c" stroke-width="3"/>
+    <circle cx="115" cy="68" r="42" fill="#fee2e2" stroke="#b91c1c" stroke-width="3"/>
+    <text x="115" y="80" text-anchor="middle" class="family">5xx</text>
+    <text x="115" y="137" text-anchor="middle" class="label">Falla del servidor</text>
+    <text x="115" y="178" text-anchor="middle" class="text">El servidor no pudo</text>
+    <text x="115" y="202" text-anchor="middle" class="text">completar la operación.</text>
+    <line x1="35" y1="228" x2="195" y2="228" stroke="#fca5a5"/>
+    <text x="115" y="266" text-anchor="middle" class="mono">500 Internal</text>
+    <text x="115" y="296" text-anchor="middle" class="mono">Server Error</text>
+    <text x="115" y="330" text-anchor="middle" class="text">Revisar código y logs.</text>
+  </g>
+
+  <text x="660" y="520" text-anchor="middle" class="label">La familia orienta el diagnóstico; el código específico precisa el resultado.</text>
+</svg>

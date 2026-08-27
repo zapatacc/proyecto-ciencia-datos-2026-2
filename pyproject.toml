@@ -5,6 +5,7 @@ description = "Materiales del curso Proyecto en Ciencia de Datos, Otono 2026"
 readme = "README.md"
 requires-python = ">=3.12,<3.13"
 dependencies = [
+    "fastapi[standard]>=0.115,<1",
     "ipykernel>=6.29,<7",
     "jupyter>=1.1.1",
     "jupyterlab>=4.2,<5",
@@ -16,6 +17,7 @@ dependencies = [
 [tool.ruff]
 target-version = "py312"
 line-length = 100
+extend-exclude = ["archive"]
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP"]
