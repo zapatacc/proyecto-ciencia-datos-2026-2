@@ -150,7 +150,3 @@ Esta tarea es individual. No se permite usar IA generativa, autocompletado gener
 | Historial de Git | **9–10:** usa la rama exacta y al menos dos commits sustantivos con mensajes claros y convencionales. | **5–8:** el historial existe, con un error menor de rama, separación o mensaje. | **0–4:** trabaja en `main`, no deja historial evaluable o fabrica commits vacíos. | 10 |
 | Pull request y entrega | **13–15:** completa la plantilla, revisa el diff, fusiona a `main`, confirma el PR cerrado como Merged y entrega su URL en Canvas. | **7–12:** el trabajo llega a `main`, pero falta una evidencia o paso menor. | **0–6:** PR abierto, cerrado sin merge, dirigido a otra rama o sin entrega oficial. | 15 |
 | **Total** |  |  |  | **100** |
-
-## Aviso para la siguiente clase
-
-El lunes 31 de agosto, a la hora de clase, habrá un quiz sobre APIs y ambientes virtuales. Repasa especialmente el propósito de un ambiente aislado, `pyproject.toml`, `uv.lock`, `uv add`, `uv sync --locked`, cliente y servidor, HTTP, URL, JSON, endpoints, recursos, parámetros de path y query, FastAPI, Uvicorn, ASGI, `/docs` y los códigos 200, 404 y 422.
