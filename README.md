@@ -8,7 +8,7 @@ Material activo del curso **Proyecto en Ciencia de Datos**. El semestre recorre 
 2. **Del modelo al producto: diseño y trazabilidad MLOps** (`modulo-02-ciclo-mlops/`).
 3. **De local a producción: contenedores, nube y operación** (`modulo-03-produccion/`).
 
-La orientación principal para estudiantes está en [`docs/guia-de-aprendizaje.md`](docs/guia-de-aprendizaje.md). Las fechas viven en [`docs/calendario-2026.md`](docs/calendario-2026.md), el procedimiento de entrega en [`docs/flujo-tareas.md`](docs/flujo-tareas.md) y las políticas complementarias en [`docs/syllabus.md`](docs/syllabus.md).
+La orientación principal para estudiantes está en [`docs/guia-de-aprendizaje.md`](docs/guia-de-aprendizaje.md). Las fechas viven en [`docs/calendario-2026.md`](docs/calendario-2026.md) y el procedimiento de entrega en [`docs/flujo-tareas.md`](docs/flujo-tareas.md).
 
 ## Cómo utilizar este repositorio
 

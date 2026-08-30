@@ -7,7 +7,7 @@ Horario efectivo: 20:10–21:50. Los festivos conservan el número de bloque, pe
 | 1 | Lun 17 ago | [Bienvenida, guía de aprendizaje y verificación técnica](../modulo-01-fundamentos/clase-01-bienvenida.ipynb) |
 | 2 | Mié 19 ago | [Python, terminal y primer flujo Git/GitHub](../modulo-01-fundamentos/clase-02-python-vscode.ipynb) |
 | 3 | Lun 24 ago | [Quiz de la clase 2 a las 20:10; ambientes virtuales y dependencias con uv](../modulo-01-fundamentos/clase-03-ambientes-uv.ipynb) |
-| 4 | Mié 26 ago | De HTTP a la primera aplicación FastAPI: métodos, códigos y seguridad |
+| 4 | Mié 26 ago | [De HTTP a la primera aplicación FastAPI: métodos, códigos y seguridad](../modulo-01-fundamentos/clase-04-api-fastapi.ipynb) |
 | 5 | Lun 31 ago | Entradas, validación y diseño del modelo inicial con FastAPI |
 | 6 | Mié 2 sep | Primera API de predicción |
 | 7 | Lun 7 sep | Integración del módulo y preparación del proyecto |
