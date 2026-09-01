@@ -146,6 +146,8 @@ Todo pull request de tarea debe indicar:
 - cómo se verificó;
 - checklist de requisitos.
 
+Cuando una tarea pida pruebas, incluye una captura de pantalla o imagen por cada prueba requerida. La captura debe permitir identificar el cliente o comando usado, la solicitud o acción comprobada y el resultado observado. Guarda los archivos en la carpeta de la tarea y enlázalos desde el README o la descripción del PR; no incluyas información sensible.
+
 Antes de fusionar, la persona autora debe revisar la pestaña **Files changed**. No se fusiona un PR que incluya archivos de otra tarea, credenciales, datos privados, soluciones ajenas o cambios accidentales.
 
 ### Cómo utilizar la plantilla de PR
@@ -182,6 +184,7 @@ Cada tarea publicada debe incluir una rúbrica cuya suma sea 100 puntos. La rúb
 - [ ] El entregable está en la carpeta indicada.
 - [ ] Mis commits tienen mensajes descriptivos.
 - [ ] Copié y completé la plantilla del curso en la descripción del PR.
+- [ ] Incluí y enlacé una captura de pantalla o imagen por cada prueba solicitada, sin datos sensibles.
 - [ ] Revisé todos los archivos en **Files changed**.
 - [ ] El PR apunta a `main`.
 - [ ] El PR fue fusionado y aparece como **Merged** y cerrado.

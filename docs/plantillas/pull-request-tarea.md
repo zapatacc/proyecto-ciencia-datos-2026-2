@@ -16,12 +16,13 @@ Resume los cambios principales.
 
 ## Cómo lo verifiqué
 
-Indica los comandos, pruebas o revisión realizada.
+Indica los comandos, pruebas o revisión realizada. Cuando la tarea solicite pruebas, enlaza una captura de pantalla o imagen por cada prueba requerida. Cada evidencia debe mostrar el cliente o comando, la solicitud o acción y el resultado observado; no incluyas información sensible.
 
 ## Checklist
 
 - [ ] Trabajé en la rama indicada y el PR apunta a `main`.
 - [ ] El entregable está en la carpeta solicitada.
+- [ ] Incluí y enlacé una captura de pantalla o imagen por cada prueba solicitada, sin datos sensibles.
 - [ ] Revisé todos los archivos en **Files changed**.
 - [ ] Mi rama y mis commits siguen las convenciones indicadas para esta tarea.
 - [ ] No incluí credenciales, datos privados, soluciones ajenas ni archivos accidentales.
