@@ -38,15 +38,15 @@ El proyecto en equipo vivirá en un repositorio privado separado. No se crea un 
 
 ## Actividades no calificables
 
-El repositorio público del curso se actualiza con `git pull`; no se utiliza para hacer commits o push. Para una actividad no calificable, conserva los archivos publicados en `labs/starters/` sin modificaciones y copia únicamente lo necesario a:
+El repositorio público del curso se actualiza con `git pull`; no se utiliza para hacer commits o push. Para una actividad no calificable, crea o prepara la ruta indicada:
 
 ```text
 labs/trabajo-local/clase-XX/
 ```
 
-`labs/trabajo-local/` está ignorada por Git. Su contenido no requiere rama, commit, push, pull request ni entrega en Canvas. Es una copia de trabajo local, no un respaldo.
+`labs/trabajo-local/` está ignorada por Git. Su contenido no requiere rama, commit, push, pull request ni entrega en Canvas. Es trabajo local, no un respaldo. Por defecto, el notebook enseña a crear desde cero los archivos que forman parte del aprendizaje. Si la clase proporciona un starter, conserva el original sin modificaciones y copia únicamente los datos, artefactos, fixtures o archivos indicados.
 
-No edites directamente el starter o notebook publicado: aunque no hagas commit, un cambio local sobre un archivo rastreado puede bloquear un `git pull` cuando el profesor publique una corrección. Si una clase tiene como objetivo practicar Git, sus instrucciones indicarán explícitamente que la actividad debe copiarse a `pcd-entregas-2026` y completar el flujo correspondiente.
+No edites directamente un starter o notebook publicado: aunque no hagas commit, un cambio local sobre un archivo rastreado puede bloquear un `git pull` cuando el profesor publique una corrección. Si una clase tiene como objetivo practicar Git, sus instrucciones indicarán explícitamente que la actividad debe llevarse a `pcd-entregas-2026` y completar el flujo correspondiente.
 
 ## Una rama y un pull request por tarea
 

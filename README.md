@@ -12,7 +12,7 @@ La orientación principal para estudiantes está en [`docs/guia-de-aprendizaje.m
 
 ## Cómo utilizar este repositorio
 
-El profesor publicará aquí notebooks, lecturas, starters y recursos del curso. Para comenzar se requieren Git, Git Bash en Windows o una terminal compatible en macOS/Linux, Visual Studio Code y Python 3.12. Las guías de instalación están disponibles para [Windows](docs/setup/windows.md) y [macOS/Linux](docs/setup/macos-linux.md).
+El profesor publicará aquí notebooks, lecturas, recursos del curso y, cuando una práctica lo justifique, starters mínimos. Para comenzar se requieren Git, Git Bash en Windows o una terminal compatible en macOS/Linux, Visual Studio Code y Python 3.12. Las guías de instalación están disponibles para [Windows](docs/setup/windows.md) y [macOS/Linux](docs/setup/macos-linux.md).
 
 Clona el repositorio en una ruta local fuera de OneDrive u otras carpetas sincronizadas:
 
@@ -42,7 +42,15 @@ cursos/
 
 ### Prácticas no calificables
 
-Los archivos publicados en `labs/starters/` se conservan como originales de referencia. Cuando una práctica no calificable requiera modificaciones, copia el starter indicado a `labs/trabajo-local/clase-XX/`. Esta carpeta está ignorada por Git: no requiere rama, commit, push, pull request ni entrega en Canvas.
+Las prácticas no calificables se construyen en `labs/trabajo-local/clase-XX/`, normalmente creando desde cero los archivos que se explican en clase. Cuando una actividad incluya un starter, conserva el original y copia únicamente los recursos indicados. La carpeta de trabajo está ignorada por Git: no requiere rama, commit, push, pull request ni entrega en Canvas.
+
+Cuando una práctica necesite una biblioteca externa, el profesor publicará juntos `pyproject.toml` y `uv.lock`. Después de `git pull`, ejecuta desde la raíz del repositorio:
+
+```bash
+uv sync --locked
+```
+
+No ejecutes `uv add` ni edites esos archivos en el repositorio público. `uv add` se usa en `pcd-entregas-2026` solamente cuando una tarea te pide declarar una dependencia y registrar esa decisión en tu pull request.
 
 ### Tareas
 
@@ -55,8 +63,8 @@ modulo-01-fundamentos/   # construcción y colaboración inicial
 modulo-02-ciclo-mlops/   # diseño, trazabilidad y ciclo de ML
 modulo-03-produccion/    # despliegue y operación
 labs/
-├── starters/            # archivos iniciales publicados
-└── trabajo-local/       # copias locales ignoradas por Git
+├── starters/            # recursos iniciales sólo cuando son necesarios
+└── trabajo-local/       # prácticas locales ignoradas por Git
 assets/                  # recursos visuales organizados por módulo y clase
 docs/                    # calendario, políticas, guías y tareas
 ```

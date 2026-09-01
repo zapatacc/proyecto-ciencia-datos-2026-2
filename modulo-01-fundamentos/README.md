@@ -6,5 +6,6 @@ El módulo lleva al estudiantado desde la verificación de herramientas hasta un
 2. [Clase 2 — Python, terminal y primer flujo Git/GitHub](clase-02-python-vscode.ipynb)
 3. [Clase 3 — Ambientes virtuales y dependencias reproducibles con uv](clase-03-ambientes-uv.ipynb)
 4. [Clase 4 — De HTTP a la primera aplicación FastAPI](clase-04-api-fastapi.ipynb)
+5. [Clase 5 — Entradas validadas con Pydantic](clase-05-validacion-fastapi.ipynb)
 
-Las clases siguientes incorporarán entradas validadas y conectarán una predicción local con la integración del módulo.
+La clase 6 conectará el contrato validado con una predicción local; la clase 7 integrará el repositorio, ambiente, función y API construidos en este módulo.
