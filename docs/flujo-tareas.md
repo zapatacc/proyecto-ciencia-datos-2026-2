@@ -27,7 +27,7 @@ El repositorio individual debe dar acceso al profesor como colaborador y usar in
 
 ```text
 actividades/                              # sólo actividades con flujo Git explícito
-└── clase-02/
+└── clase-02-resumen-viajes/
 tareas/
 ├── tarea-01-lecturas/
 └── tarea-02-nombre/
@@ -92,6 +92,20 @@ La rama ya fusionada puede eliminarse. Las correcciones posteriores a la entrega
 
 ## Convenciones de nombres
 
+### Carpetas de actividades
+
+Las actividades que explícitamente usan Git viven en `actividades/` y siguen
+esta convención:
+
+```text
+clase-NN-descripcion-en-kebab-case/
+```
+
+`NN` es el número de clase con dos dígitos y la descripción identifica el
+trabajo realizado. Por ejemplo: `clase-02-resumen-viajes/`,
+`clase-03-uv/` y `clase-06-api-prediccion/`. Los nombres usan minúsculas, sin
+espacios ni acentos.
+
 ### Ramas
 
 La convención de ramas del curso es:
@@ -146,7 +160,7 @@ Todo pull request de tarea debe indicar:
 - cómo se verificó;
 - checklist de requisitos.
 
-Cuando una tarea pida pruebas, incluye una captura de pantalla o imagen por cada prueba requerida. La captura debe permitir identificar el cliente o comando usado, la solicitud o acción comprobada y el resultado observado. Guarda los archivos en la carpeta de la tarea y enlázalos desde el README o la descripción del PR; no incluyas información sensible.
+Cuando una tarea pida verificación, incluye una captura de pantalla o imagen por cada caso requerido. La captura debe permitir identificar el cliente o comando usado, la solicitud o acción comprobada y el resultado observado. Guarda los archivos en la carpeta de la tarea y enlázalos desde el README o la descripción del PR; no incluyas información sensible. Una tarea no exigirá una biblioteca o patrón de pruebas que aún no se haya enseñado. Para endpoints HTTP, la verificación será manual con Postman, la interfaz `/docs` o `curl` —salvo que la tarea introduzca formalmente otra herramienta— y cada imagen deberá mostrar solicitud y respuesta; con `curl`, el comando completo y su salida.
 
 Antes de fusionar, la persona autora debe revisar la pestaña **Files changed**. No se fusiona un PR que incluya archivos de otra tarea, credenciales, datos privados, soluciones ajenas o cambios accidentales.
 
@@ -184,7 +198,7 @@ Cada tarea publicada debe incluir una rúbrica cuya suma sea 100 puntos. La rúb
 - [ ] El entregable está en la carpeta indicada.
 - [ ] Mis commits tienen mensajes descriptivos.
 - [ ] Copié y completé la plantilla del curso en la descripción del PR.
-- [ ] Incluí y enlacé una captura de pantalla o imagen por cada prueba solicitada, sin datos sensibles.
+- [ ] Incluí y enlacé una captura de pantalla o imagen por cada caso de verificación solicitado, sin datos sensibles.
 - [ ] Revisé todos los archivos en **Files changed**.
 - [ ] El PR apunta a `main`.
 - [ ] El PR fue fusionado y aparece como **Merged** y cerrado.

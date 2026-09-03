@@ -43,7 +43,7 @@ tareas/tarea-03-api-prediccion/
 ├── entrenar_modelo_lineal.py
 ├── entrenar_modelo_bosque.py
 ├── main.py
-├── test_main.py
+├── evidencia/
 └── README.md
 ```
 
@@ -153,35 +153,47 @@ Después explica:
 Usa la misma validación para que la comparación sea justa. No copies cifras del
 notebook ni de otra persona: reporta las obtenidas al ejecutar tus scripts.
 
-## 4. Pruebas y evidencia
+## 4. Recorrido completo y evidencia
 
-Las pruebas verifican el resultado, pero no son el único propósito de la tarea.
-Con `TestClient`, comprueba al menos:
+La evidencia debe contar el mismo recorrido que construiste: entrenar los dos
+modelos, iniciar la API y obtener predicciones con cada uno. Desde la carpeta
+de la tarea, ejecuta en este orden:
 
-1. una solicitud válida devuelve `200` en cada endpoint e identifica el modelo
-   correcto;
-2. `hora_recoleccion: 24` devuelve `422`;
-3. omitir `zona_destino` devuelve `422`;
-4. los endpoints reutilizan los modelos cargados y no entrenan por solicitud.
+```bash
+uv run python entrenar_modelo_lineal.py
+uv run python entrenar_modelo_bosque.py
+uv run fastapi dev
+```
 
-El README debe incluir los comandos completos para reproducir los dos
-artefactos, ejecutar las pruebas e iniciar FastAPI desde la carpeta de la tarea.
-Agrega capturas legibles de:
+Con FastAPI activo, usa la herramienta que prefieras —**Postman**, la interfaz
+interactiva `/docs` o `curl`— para enviar el JSON de la sección 2 a los dos
+endpoints. Después verifica los dos errores de contrato: una solicitud con
+`hora_recoleccion: 24` y otra que omita `zona_destino`.
 
-- la salida de ambos entrenamientos;
-- la ejecución de las pruebas;
-- una respuesta `200` de cada endpoint;
-- una respuesta `422`;
-- los dos endpoints en `/docs`.
+Guarda las imágenes dentro de `tareas/tarea-03-api-prediccion/evidencia/` y
+enlázalas desde el README. No necesitas capturas del entrenamiento: sus
+resultados se reportan en la tabla de comparación de la sección 3. Incluye
+únicamente estas evidencias:
 
-No muestres rutas personales en las capturas.
+| Momento | Imagen requerida | Debe mostrar |
+|---|---|---|
+| Predicción lineal | llamada con `200` | método, URL, JSON válido y respuesta que identifica la regresión lineal |
+| Predicción de bosque | llamada con `200` | método, URL, JSON válido y respuesta que identifica el bosque aleatorio |
+| Validación de hora | llamada con `422` | método, URL, `hora_recoleccion: 24` y detalle del error |
+| Validación de campo requerido | llamada con `422` | método, URL, ausencia de `zona_destino` y detalle del error |
+
+El README debe incluir los tres comandos anteriores, la tabla de comparación de
+la sección 3 y enlaces a las cuatro imágenes. Cada imagen debe hacer visible
+la solicitud y su respuesta; en `curl`, muestra el comando completo y la salida
+en la misma captura. No muestres rutas personales en las capturas. La revisión
+del código comprobará que los dos artefactos se cargan una vez al iniciar y que
+los endpoints no ejecutan `fit`.
 
 ## Archivos que sí y que no se entregan
 
 | Sí forman parte de Git | Permanecen sólo en tu computadora |
 |---|---|
 | scripts `.py` | archivos `.parquet` |
-| `test_main.py` | archivos `.pkl` |
 | `README.md` y evidencia | contenido de `.venv/` |
 | `.gitignore` | cachés locales |
 | `pyproject.toml` y `uv.lock`, si cambiaron | |
@@ -196,7 +208,7 @@ Realiza al menos dos commits sustantivos, por ejemplo:
 ```text
 feat(tarea-03): entrena dos modelos de duracion
 feat(tarea-03): publica endpoints comparables
-test(tarea-03): verifica modelos y contrato
+docs(tarea-03): documenta validacion en postman
 docs(tarea-03): compara resultados de validacion
 ```
 
@@ -222,6 +234,6 @@ oficial, mensajes de error y pedir ayuda al profesor.
 | Entrenamiento reproducible de dos modelos | **27–30:** ambos scripts usan la misma preparación y partición, entrenan el estimador indicado, calculan métricas y generan artefactos con metadatos. | **16–26:** los dos modelos entrenan, pero existe una inconsistencia menor de preparación, evaluación o metadatos. | **0–15:** falta un modelo, no hay validación comparable o depende de artefactos ajenos. | 30 |
 | API con dos endpoints | **22–25:** carga ambos artefactos una vez, expone las dos rutas con el mismo contrato y predice con el modelo correcto. | **13–21:** la API inicia, pero una ruta, respuesta o carga presenta una inconsistencia. | **0–12:** falta un endpoint, se reentrena por solicitud o no hay inferencia real. | 25 |
 | Comparación y decisiones | **18–20:** reporta RMSE, tiempo y tamaño con resultados propios y argumenta una elección considerando tradeoffs. | **10–17:** presenta resultados, pero la comparación o justificación es parcial. | **0–9:** faltan métricas comparables o se elige sin evidencia. | 20 |
-| Pruebas, evidencia y exclusiones | **13–15:** pruebas y capturas cubren ambos modelos, `200`, `422` y `/docs`; ningún Parquet o pickle entra a Git. | **7–12:** verificación parcial o evidencia incompleta sin comprometer los binarios. | **0–6:** faltan verificaciones esenciales o se confirman datos/artefactos. | 15 |
+| Validación manual, evidencia y exclusiones | **13–15:** cuatro capturas de llamadas cubren ambos modelos, los casos `200` y los dos casos `422`; ningún Parquet o pickle entra a Git. | **7–12:** validación o evidencia parcial sin comprometer los binarios. | **0–6:** faltan verificaciones esenciales o se confirman datos/artefactos. | 15 |
 | Git, PR y entrega | **9–10:** rama correcta, commits sustantivos, README reproducible, PR fusionado y URL entregada a tiempo. | **5–8:** el trabajo llega a `main` con una omisión menor. | **0–4:** historial no evaluable, PR sin merge o entrega ausente. | 10 |
 | **Total** |  |  |  | **100** |
