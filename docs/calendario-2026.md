@@ -7,10 +7,10 @@ Horario efectivo: 20:10–21:50. Los festivos conservan el número de bloque, pe
 | 1 | Lun 17 ago | [Bienvenida, guía de aprendizaje y verificación técnica](../modulo-01-fundamentos/clase-01-bienvenida.ipynb) |
 | 2 | Mié 19 ago | [Python, terminal y primer flujo Git/GitHub](../modulo-01-fundamentos/clase-02-python-vscode.ipynb) |
 | 3 | Lun 24 ago | [Quiz de la clase 2 a las 20:10; ambientes virtuales y dependencias con uv](../modulo-01-fundamentos/clase-03-ambientes-uv.ipynb) |
-| 4 | Mié 26 ago | [De HTTP a la primera aplicación FastAPI: métodos, códigos y seguridad](../modulo-01-fundamentos/clase-04-api-fastapi.ipynb) |
+| 4 | Mié 26 ago | De HTTP a la primera aplicación FastAPI: métodos, códigos y seguridad |
 | 5 | Lun 31 ago | [Entradas validadas con Pydantic](../modulo-01-fundamentos/clase-05-validacion-fastapi.ipynb) |
-| 6 | Mié 2 sep | Primera API de predicción |
-| 7 | Lun 7 sep | Integración del módulo y preparación del proyecto |
+| 6 | Mié 2 sep | [De viajes observados a una API de predicción](../modulo-01-fundamentos/clase-06-api-prediccion.ipynb) |
+| 7 | Lun 7 sep | Tarea 3 hasta las 19:55; Quiz 2 a las 20:10 (15 min); integración del módulo y preparación del proyecto |
 | 8 | Mié 9 sep | Introducción a MLOps |
 | 9 | Lun 14 sep | Niveles de madurez |
 | 10 | Mié 16 sep | Festivo — sin clase ni entrega |

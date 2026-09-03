@@ -11,13 +11,13 @@ dependencies = [
     "jupyterlab>=4.2,<5",
     "nbclient>=0.10,<1",
     "nbformat>=5.10,<6",
+    "pandas>=2.2,<3",
     "ruff>=0.6,<1",
 ]
 
 [tool.ruff]
 target-version = "py312"
 line-length = 100
-extend-exclude = ["archive"]
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP"]

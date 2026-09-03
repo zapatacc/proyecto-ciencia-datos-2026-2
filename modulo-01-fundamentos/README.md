@@ -7,5 +7,6 @@ El módulo lleva al estudiantado desde la verificación de herramientas hasta un
 3. [Clase 3 — Ambientes virtuales y dependencias reproducibles con uv](clase-03-ambientes-uv.ipynb)
 4. [Clase 4 — De HTTP a la primera aplicación FastAPI](clase-04-api-fastapi.ipynb)
 5. [Clase 5 — Entradas validadas con Pydantic](clase-05-validacion-fastapi.ipynb)
+6. [Clase 6 — De viajes observados a una API de predicción](clase-06-api-prediccion.ipynb)
 
-La clase 6 conectará el contrato validado con una predicción local; la clase 7 integrará el repositorio, ambiente, función y API construidos en este módulo.
+La clase 7 integrará el repositorio, ambiente, función y API construidos en este módulo.
