@@ -8,5 +8,6 @@ El módulo lleva al estudiantado desde la verificación de herramientas hasta un
 4. [Clase 4 — De HTTP a la primera aplicación FastAPI](clase-04-api-fastapi.ipynb)
 5. [Clase 5 — Entradas validadas con Pydantic](clase-05-validacion-fastapi.ipynb)
 6. [Clase 6 — De viajes observados a una API de predicción](clase-06-api-prediccion.ipynb)
+7. [Clase 7 — Inicio del proyecto en equipo](clase-07-integracion.ipynb)
 
-La clase 7 integrará el repositorio, ambiente, función y API construidos en este módulo.
+La clase 7 cierra el módulo con trabajo autónomo por equipos: crear el repositorio, fusionar un PR con el avance de clase e iniciar después un PR separado para completar la primera entrega.
