@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="470" viewBox="0 0 1080 470" role="img" aria-labelledby="title desc">
+<title id="title">El modelo vive dentro de un sistema</title><desc id="desc">El modelo está rodeado de usuario, datos, preparación, API, ambiente y observación. Cada componente resuelve una necesidad concreta.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10Z" fill="#475569"/></marker>
+<style>text{font-family:Arial,sans-serif;fill:#172554}.title{font-size:28px;font-weight:700}.heading{font-size:21px;font-weight:700}.body{font-size:18px;fill:#334155}.small{font-size:16px;fill:#475569}.arrow{fill:none;stroke:#475569;stroke-width:2.5;marker-end:url(#arrow)}</style></defs>
+<rect width="1080" height="470" rx="20" fill="#f8fafc"/>
+<text x="35" y="48" class="title">El modelo vive dentro de un sistema</text>
+<rect x="399" y="199" width="282" height="90" rx="18" fill="#dbeafe" stroke="#1d4ed8" stroke-width="3"/><text x="477" y="236" class="heading">MODELO</text><text x="433" y="269" class="body">Estima duración</text>
+<rect x="35" y="94" width="275" height="84" rx="12" fill="white" stroke="#64748b"/><text x="55" y="129" class="heading">Datos de viajes</text><text x="55" y="157" class="body">¿Qué población describen?</text>
+<rect x="403" y="94" width="275" height="84" rx="12" fill="white" stroke="#64748b"/><text x="423" y="129" class="heading">Preparación</text><text x="423" y="157" class="body">¿Mismas unidades y reglas?</text>
+<path d="M310 136H391" class="arrow"/><path d="M540 178V193" class="arrow"/>
+<rect x="770" y="94" width="275" height="84" rx="12" fill="#f0fdfa" stroke="#0f766e"/><text x="790" y="129" class="heading">Usuario y decisión</text><text x="790" y="157" class="body">¿Para qué usa la duración?</text>
+<rect x="770" y="206" width="275" height="84" rx="12" fill="white" stroke="#64748b"/><text x="790" y="240" class="heading">API y aplicación</text><text x="790" y="269" class="body">¿Cómo recibe el resultado?</text>
+<path d="M681 245H758" class="arrow"/><path d="M908 206V185" class="arrow"/>
+<rect x="35" y="206" width="275" height="84" rx="12" fill="white" stroke="#64748b"/><text x="55" y="240" class="heading">Código y ambiente</text><text x="55" y="269" class="body">¿Cómo se reconstruye?</text>
+<path d="M310 245H387" class="arrow"/>
+<rect x="274" y="338" width="533" height="76" rx="12" fill="#fff7ed" stroke="#c2410c"/><text x="298" y="369" class="heading">Observación y respuesta a fallas</text><text x="298" y="398" class="body">¿Qué cambió y qué debe revisar el equipo?</text>
+<path d="M908 290V376H819" class="arrow"/><path d="M274 376H170V298" class="arrow"/>
+</svg>

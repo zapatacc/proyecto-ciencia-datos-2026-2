@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+<title id="title">Evolución de la operación de sistemas de machine learning</title>
+<desc id="desc">Una línea de tiempo avanza de procesos manuales antes de 2015 hacia deuda técnica visible, pipelines integrados y operación observable.</desc>
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10Z" fill="#334155"/></marker>
+  <style>text{font-family:Arial,sans-serif;fill:#172554}.title{font-size:28px;font-weight:700}.year{font-size:21px;font-weight:700}.heading{font-size:18px;font-weight:700}.body{font-size:15px;fill:#334155}.line{fill:none;stroke:#334155;stroke-width:3;marker-end:url(#arrow)}</style>
+</defs>
+<rect width="1200" height="430" rx="20" fill="#f8fafc"/>
+<text x="35" y="48" class="title">De entrenar un modelo a operar un sistema de ML</text>
+<path d="M105 215H1100" class="line"/>
+<circle cx="145" cy="215" r="11" fill="#64748b"/><circle cx="440" cy="215" r="11" fill="#2563eb"/><circle cx="735" cy="215" r="11" fill="#7c3aed"/><circle cx="1030" cy="215" r="11" fill="#15803d"/>
+<rect x="45" y="82" width="220" height="105" rx="12" fill="#f1f5f9" stroke="#64748b"/>
+<text x="65" y="108" class="year">Antes de 2015</text><text x="65" y="136" class="heading">Proceso artesanal</text><text x="65" y="160" class="body">Notebooks y entregas</text><text x="65" y="179" class="body">manuales</text>
+<rect x="330" y="245" width="220" height="112" rx="12" fill="#eff6ff" stroke="#2563eb"/>
+<text x="350" y="275" class="year">2015</text><text x="350" y="303" class="heading">Deuda técnica visible</text><text x="350" y="329" class="body">El modelo es una parte</text><text x="350" y="348" class="body">del sistema</text>
+<rect x="625" y="82" width="220" height="105" rx="12" fill="#f5f3ff" stroke="#7c3aed"/>
+<text x="645" y="113" class="year">2016–2019</text><text x="645" y="143" class="heading">Pipelines integrados</text><text x="645" y="168" class="body">Datos, pruebas y despliegue</text>
+<rect x="920" y="245" width="235" height="112" rx="12" fill="#ecfdf5" stroke="#15803d"/>
+<text x="940" y="277" class="year">2020 en adelante</text><text x="940" y="307" class="heading">Operación observable</text><text x="940" y="329" class="body">Madurez y gobierno</text><text x="940" y="349" class="body">Retroalimentación</text>
+</svg>

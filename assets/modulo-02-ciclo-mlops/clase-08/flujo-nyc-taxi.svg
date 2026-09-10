@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+<title id="title">Ciclo de una predicción de duración de viajes</title>
+<desc id="desc">Los datos pasan por preparación, entrenamiento y evaluación. Un modelo aprobado se integra a una API. El uso produce observaciones que regresan al siguiente ciclo.</desc>
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10Z" fill="#334155"/></marker>
+  <style>text{font-family:Arial,sans-serif;fill:#172554}.title{font-size:28px;font-weight:700}.heading{font-size:19px;font-weight:700}.body{font-size:16px;fill:#334155}.arrow{fill:none;stroke:#334155;stroke-width:2.5;marker-end:url(#arrow)}</style>
+</defs>
+<rect width="1200" height="430" rx="20" fill="#f8fafc"/>
+<text x="35" y="48" class="title">Del viaje observado a una predicción que se puede mantener</text>
+<g>
+  <rect x="28" y="105" width="170" height="92" rx="13" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="50" y="139" class="heading">Datos</text><text x="50" y="168" class="body">Viajes terminados</text>
+  <rect x="228" y="105" width="170" height="92" rx="13" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="250" y="139" class="heading">Preparación</text><text x="250" y="168" class="body">Features + target</text>
+  <rect x="428" y="105" width="170" height="92" rx="13" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+  <text x="450" y="139" class="heading">Entrenamiento</text><text x="450" y="168" class="body">Ajustar candidato</text>
+  <rect x="628" y="105" width="170" height="92" rx="13" fill="#fff7ed" stroke="#c2410c" stroke-width="2"/>
+  <text x="650" y="139" class="heading">Evaluación</text><text x="650" y="168" class="body">Métrica + criterio</text>
+  <rect x="828" y="105" width="170" height="92" rx="13" fill="#f0fdfa" stroke="#0f766e" stroke-width="2"/>
+  <text x="850" y="139" class="heading">API</text><text x="850" y="168" class="body">Servir una versión</text>
+  <rect x="1028" y="105" width="145" height="92" rx="13" fill="#ecfdf5" stroke="#047857" stroke-width="2"/>
+  <text x="1050" y="139" class="heading">Uso</text><text x="1050" y="168" class="body">Predicciones</text>
+</g>
+<path d="M198 151H218" class="arrow"/><path d="M398 151H418" class="arrow"/><path d="M598 151H618" class="arrow"/><path d="M798 151H818" class="arrow"/><path d="M998 151H1018" class="arrow"/>
+<rect x="260" y="274" width="680" height="86" rx="14" fill="white" stroke="#64748b" stroke-width="2"/>
+<text x="290" y="309" class="heading">Observar y aprender del sistema</text>
+<text x="290" y="337" class="body">Calidad de datos · errores · latencia · desempeño cuando llega la respuesta real</text>
+<path d="M1100 197V317H950" class="arrow"/><path d="M260 317H112V207" class="arrow"/>
+</svg>

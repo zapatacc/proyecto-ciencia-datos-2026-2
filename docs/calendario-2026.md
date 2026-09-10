@@ -11,8 +11,8 @@ Horario efectivo: 20:10–21:50. Los festivos conservan el número de bloque, pe
 | 5 | Lun 31 ago | [Entradas validadas con Pydantic](../modulo-01-fundamentos/clase-05-validacion-fastapi.ipynb) |
 | 6 | Mié 2 sep | [De viajes observados a una API de predicción](../modulo-01-fundamentos/clase-06-api-prediccion.ipynb) |
 | 7 | Lun 7 sep | Tarea 3 hasta las 19:55; Quiz 2 a las 20:10 (15 min); [inicio autónomo del proyecto](../modulo-01-fundamentos/clase-07-integracion.ipynb) |
-| 8 | Mié 9 sep | Introducción a MLOps |
-| 9 | Lun 14 sep | Primera entrega del proyecto hasta las 19:55; niveles de madurez |
+| 8 | Mié 9 sep | [Introducción a MLOps: ciclo, prácticas y niveles de madurez](../modulo-02-ciclo-mlops/clase-08-introduccion-mlops.ipynb) |
+| 9 | Lun 14 sep | Primera entrega del proyecto hasta las 19:55; diagnóstico de madurez y ruta incremental |
 | 10 | Mié 16 sep | Festivo — sin clase ni entrega |
 | 11 | Lun 21 sep | Datos, modelo y código |
 | 12 | Mié 23 sep | Patrones de despliegue |
