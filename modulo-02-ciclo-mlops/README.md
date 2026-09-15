@@ -13,3 +13,7 @@ trazabilidad de experimentos.
   la definición, motivación, componentes, prácticas, ciclo y niveles de
   madurez 0–4. El caso NYC Taxi conecta datos, entrenamiento, evaluación,
   artefacto, versión e inferencia con código ejecutable.
+- [Clase 9 — Tres niveles del software de ML](clase-09-niveles-software-ml.ipynb):
+  organiza un sistema mediante datos, modelo y código; compara entrenamiento,
+  inferencia y patrones de serving, y termina con un mapa calificable del
+  proyecto entregado mediante PR.

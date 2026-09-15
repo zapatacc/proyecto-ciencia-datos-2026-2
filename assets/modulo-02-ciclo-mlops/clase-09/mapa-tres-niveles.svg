@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-labelledby="title desc">
+  <title id="title">Mapa de los tres niveles del software de machine learning</title>
+  <desc id="desc">Un mapa jerárquico con tres columnas. Datos contiene ingesta, exploración y validación, limpieza y división. Modelo contiene entrenamiento, evaluación, prueba y empaquetado. Código contiene serving, monitoreo y logging, patrones de serving y estrategias de despliegue.</desc>
+  <rect width="1200" height="600" fill="#f8fafc"/>
+  <text x="600" y="48" text-anchor="middle" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#0f172a">Tres niveles del software de ML</text>
+  <text x="600" y="78" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#334155">El recorrido de esta sesión: de los datos a una predicción que puede operar</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="45" y="116" width="340" height="418" rx="16" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+    <rect x="430" y="116" width="340" height="418" rx="16" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+    <rect x="815" y="116" width="340" height="418" rx="16" fill="#fff7ed" stroke="#ea580c" stroke-width="2"/>
+    <text x="215" y="158" text-anchor="middle" font-size="25" font-weight="700" fill="#1e3a8a">Datos</text>
+    <text x="600" y="158" text-anchor="middle" font-size="25" font-weight="700" fill="#14532d">Modelo</text>
+    <text x="985" y="158" text-anchor="middle" font-size="25" font-weight="700" fill="#7c2d12">Código</text>
+    <g font-size="18" fill="#172554">
+      <text x="80" y="210">1. Ingesta y procedencia</text><text x="80" y="260">2. Exploración y validación</text><text x="80" y="310">3. Limpieza y transformación</text><text x="80" y="360">4. División de datos</text><text x="80" y="430">Resultado: datos preparados,</text><text x="80" y="455">documentados y reproducibles</text>
+    </g>
+    <g font-size="18" fill="#14532d">
+      <text x="465" y="210">1. Entrenamiento</text><text x="465" y="260">2. Evaluación</text><text x="465" y="310">3. Prueba de aceptación</text><text x="465" y="360">4. Empaquetado</text><text x="465" y="430">Resultado: artefacto versionado</text><text x="465" y="455">y listo para consumir</text>
+    </g>
+    <g font-size="18" fill="#7c2d12">
+      <text x="850" y="210">1. Serving, monitoring y logging</text><text x="850" y="260">2. Patrones de serving</text><text x="850" y="310">3. Docker y serverless</text><text x="850" y="380">Resultado: predicción integrada</text><text x="850" y="405">en una aplicación u operación</text>
+    </g>
+    <path d="M385 325 L420 325" stroke="#475569" stroke-width="4"/><path d="M770 325 L805 325" stroke="#475569" stroke-width="4"/>
+    <polygon points="420,325 408,318 408,332" fill="#475569"/><polygon points="805,325 793,318 793,332" fill="#475569"/>
+    <text x="600" y="575" text-anchor="middle" font-size="16" fill="#475569">Las interfaces entre niveles deben conservar el significado de los datos, el modelo y sus versiones.</text>
+  </g>
+</svg>
