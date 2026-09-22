@@ -1,0 +1,200 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="820" viewBox="0 0 1900 820" role="img" aria-labelledby="title desc">
+  <title id="title">Registro manual de seis experimentos de machine learning en una hoja de cálculo</title>
+  <desc id="desc">Hoja simulada con seis runs, desde un baseline hasta una red neuronal, que compara parámetros, datos, RMSE, tiempo, tamaño del artifact y decisión.</desc>
+  <defs>
+    <filter id="shadow" x="-5%" y="-10%" width="110%" height="125%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#172b4d" flood-opacity="0.16"/>
+    </filter>
+    <style>
+      text { font-family: Inter, Arial, sans-serif; fill: #172b4d; }
+      .small { font-size: 18px; }
+      .cell { font-size: 19px; }
+      .header { font-size: 18px; font-weight: 700; }
+      .header text { fill: #ffffff; }
+      .chrome { font-size: 19px; fill: #44546f; }
+      .rownum { font-size: 18px; fill: #607089; text-anchor: middle; }
+      .muted { fill: #667085; }
+      .model { font-weight: 650; }
+      .metric { font-weight: 700; fill: #174ea6; }
+      .decision { fill: #344054; }
+      .titlebar { fill: #ffffff; }
+      .titlemeta { fill: #d9efe2; }
+    </style>
+  </defs>
+
+  <rect width="1900" height="820" fill="#f3f6fb"/>
+  <g filter="url(#shadow)">
+    <rect x="32" y="28" width="1836" height="752" rx="18" fill="#ffffff"/>
+  </g>
+
+  <!-- Spreadsheet chrome -->
+  <rect x="32" y="28" width="1836" height="62" rx="18" fill="#1f6f43"/>
+  <rect x="32" y="70" width="1836" height="20" fill="#1f6f43"/>
+  <circle cx="64" cy="59" r="8" fill="#ff6b6b"/>
+  <circle cx="90" cy="59" r="8" fill="#ffd166"/>
+  <circle cx="116" cy="59" r="8" fill="#72d572"/>
+  <text x="150" y="66" font-size="23" font-weight="700" class="titlebar">experiment_log_nyc_taxi</text>
+  <text x="1655" y="65" font-size="18" class="titlemeta">6 runs · manual log</text>
+
+  <rect x="32" y="90" width="1836" height="54" fill="#f8fafc"/>
+  <text x="58" y="124" class="chrome">Archivo</text>
+  <text x="142" y="124" class="chrome">Editar</text>
+  <text x="212" y="124" class="chrome">Ver</text>
+  <text x="260" y="124" class="chrome">Insertar</text>
+  <text x="350" y="124" class="chrome">Datos</text>
+
+  <!-- Column letters -->
+  <rect x="32" y="144" width="1836" height="38" fill="#eef2f7"/>
+  <rect x="32" y="144" width="52" height="38" fill="#e5eaf1"/>
+  <g class="chrome" text-anchor="middle">
+    <text x="144" y="170">A</text>
+    <text x="334" y="170">B</text>
+    <text x="674" y="170">C</text>
+    <text x="1009" y="170">D</text>
+    <text x="1194" y="170">E</text>
+    <text x="1344" y="170">F</text>
+    <text x="1494" y="170">G</text>
+    <text x="1699" y="170">H</text>
+  </g>
+
+  <!-- Header row -->
+  <rect x="32" y="182" width="52" height="66" fill="#eef2f7"/>
+  <rect x="84" y="182" width="1784" height="66" fill="#2f855a"/>
+  <text x="58" y="222" class="rownum">1</text>
+  <g class="header">
+    <text x="101" y="222">Run</text>
+    <text x="221" y="222">Modelo</text>
+    <text x="481" y="222">Parámetros clave</text>
+    <text x="901" y="212">Entrenamiento →</text><text x="901" y="236">validación</text>
+    <text x="1153" y="212">RMSE</text><text x="1153" y="236">validación</text>
+    <text x="1271" y="212">Tiempo</text><text x="1271" y="236">entrenamiento</text>
+    <text x="1450" y="212">Tamaño</text><text x="1450" y="236">artifact</text>
+    <text x="1571" y="222">Decisión</text>
+  </g>
+
+  <!-- Alternating data rows -->
+  <rect x="32" y="248" width="1836" height="82" fill="#ffffff"/>
+  <rect x="32" y="330" width="1836" height="82" fill="#f8fbf9"/>
+  <rect x="32" y="412" width="1836" height="82" fill="#ffffff"/>
+  <rect x="32" y="494" width="1836" height="82" fill="#f8fbf9"/>
+  <rect x="32" y="576" width="1836" height="82" fill="#ffffff"/>
+  <rect x="32" y="658" width="1836" height="82" fill="#f8fbf9"/>
+  <rect x="32" y="248" width="52" height="492" fill="#eef2f7"/>
+
+  <!-- Grid -->
+  <g stroke="#d8dee9" stroke-width="1">
+    <line x1="32" y1="182" x2="1868" y2="182"/>
+    <line x1="32" y1="248" x2="1868" y2="248"/>
+    <line x1="32" y1="330" x2="1868" y2="330"/>
+    <line x1="32" y1="412" x2="1868" y2="412"/>
+    <line x1="32" y1="494" x2="1868" y2="494"/>
+    <line x1="32" y1="576" x2="1868" y2="576"/>
+    <line x1="32" y1="658" x2="1868" y2="658"/>
+    <line x1="32" y1="740" x2="1868" y2="740"/>
+    <line x1="84" y1="144" x2="84" y2="740"/>
+    <line x1="204" y1="144" x2="204" y2="740"/>
+    <line x1="464" y1="144" x2="464" y2="740"/>
+    <line x1="884" y1="144" x2="884" y2="740"/>
+    <line x1="1134" y1="144" x2="1134" y2="740"/>
+    <line x1="1254" y1="144" x2="1254" y2="740"/>
+    <line x1="1434" y1="144" x2="1434" y2="740"/>
+    <line x1="1554" y1="144" x2="1554" y2="740"/>
+    <line x1="1868" y1="144" x2="1868" y2="740"/>
+  </g>
+
+  <!-- Row numbers -->
+  <g class="rownum">
+    <text x="58" y="296">2</text><text x="58" y="378">3</text>
+    <text x="58" y="460">4</text><text x="58" y="542">5</text>
+    <text x="58" y="624">6</text><text x="58" y="706">7</text>
+  </g>
+
+  <!-- Run 1 -->
+  <g class="cell">
+    <text x="101" y="294">run-001</text>
+    <text x="221" y="294" class="model">Mean baseline</text>
+    <text x="481" y="294" class="muted">sin hiperparámetros</text>
+    <text x="901" y="294">Mar → Apr 2026</text>
+    <text x="1153" y="294" class="metric">8.42 min</text>
+    <text x="1280" y="294">0.01 s</text>
+    <text x="1450" y="294">0.001 MiB</text>
+    <text x="1571" y="294" class="decision">referencia mínima</text>
+  </g>
+
+  <!-- Run 2 -->
+  <g class="cell">
+    <text x="101" y="376">run-002</text>
+    <text x="221" y="376" class="model">Linear Regression</text>
+    <text x="481" y="376">fit_intercept=True</text>
+    <text x="901" y="376">Mar → Apr 2026</text>
+    <text x="1153" y="376" class="metric">6.18 min</text>
+    <text x="1280" y="376">0.05 s</text>
+    <text x="1450" y="376">0.005 MiB</text>
+    <text x="1571" y="366" class="decision">conservar como</text>
+    <text x="1571" y="390" class="decision">baseline entrenado</text>
+  </g>
+
+  <!-- Run 3 -->
+  <g class="cell">
+    <text x="101" y="458">run-003</text>
+    <text x="221" y="458" class="model">Decision Tree</text>
+    <text x="481" y="448">max_depth=10</text>
+    <text x="481" y="472">min_samples_leaf=8</text>
+    <text x="901" y="458">Mar → Apr 2026</text>
+    <text x="1153" y="458" class="metric">5.71 min</text>
+    <text x="1280" y="458">0.08 s</text>
+    <text x="1450" y="458">0.31 MiB</text>
+    <text x="1571" y="458" class="decision">revisar sobreajuste</text>
+  </g>
+
+  <!-- Run 4 -->
+  <g class="cell">
+    <text x="101" y="540">run-004</text>
+    <text x="221" y="540" class="model">Random Forest</text>
+    <text x="481" y="518">n_estimators=100</text>
+    <text x="481" y="542">max_depth=12</text>
+    <text x="481" y="566">min_samples_leaf=5</text>
+    <text x="901" y="540">Mar → Apr 2026</text>
+    <text x="1153" y="540" class="metric">5.12 min</text>
+    <text x="1280" y="540">0.18 s</text>
+    <text x="1450" y="540">1.58 MiB</text>
+    <text x="1571" y="540" class="decision">candidato equilibrado</text>
+  </g>
+
+  <!-- Run 5 -->
+  <g class="cell">
+    <text x="101" y="622">run-005</text>
+    <text x="221" y="622" class="model">Gradient Boosting</text>
+    <text x="481" y="600">n_estimators=200</text>
+    <text x="481" y="624">learning_rate=0.05</text>
+    <text x="481" y="648">max_depth=4</text>
+    <text x="901" y="622">Mar → Apr 2026</text>
+    <text x="1153" y="622" class="metric">4.98 min</text>
+    <text x="1280" y="622">1.24 s</text>
+    <text x="1450" y="622">2.36 MiB</text>
+    <text x="1571" y="612" class="decision">mejor RMSE;</text>
+    <text x="1571" y="636" class="decision">medir inferencia</text>
+  </g>
+
+  <!-- Run 6 -->
+  <g class="cell">
+    <text x="101" y="704">run-006</text>
+    <text x="221" y="704" class="model">Neural Network</text>
+    <text x="481" y="682">layers=[128,64]</text>
+    <text x="481" y="706">dropout=0.2</text>
+    <text x="481" y="730">epochs=50</text>
+    <text x="901" y="704">Mar → Apr 2026</text>
+    <text x="1153" y="704" class="metric">5.04 min</text>
+    <text x="1280" y="704">28.40 s</text>
+    <text x="1450" y="704">4.70 MiB</text>
+    <text x="1571" y="694" class="decision">costo no</text>
+    <text x="1571" y="718" class="decision">justificado</text>
+  </g>
+
+  <!-- Sheet tab -->
+  <rect x="32" y="740" width="1836" height="40" rx="0" fill="#f8fafc"/>
+  <rect x="78" y="742" width="170" height="36" fill="#ffffff"/>
+  <line x1="78" y1="777" x2="248" y2="777" stroke="#2f855a" stroke-width="4"/>
+  <text x="106" y="768" class="small" font-weight="650">experimentos</text>
+  <text x="270" y="768" class="small muted">＋</text>
+</svg>
