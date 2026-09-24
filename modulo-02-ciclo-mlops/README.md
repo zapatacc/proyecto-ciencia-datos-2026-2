@@ -5,7 +5,8 @@ mantenerse. Comienza con los problemas concretos de reproducibilidad,
 versiones y operación que aparecen cuando una predicción debe repetirse,
 identificarse y mantenerse. Las clases 8 y 9 establecen el ciclo, los tres
 niveles, las interfaces y los patrones iniciales; la Clase 10 incorpora
-trazabilidad de experimentos con MLflow.
+trazabilidad de experimentos con MLflow y la Clase 11 convierte los modelos
+seleccionados en versiones identificables dentro de Model Registry.
 
 ## Clases disponibles
 
@@ -21,3 +22,7 @@ trazabilidad de experimentos con MLflow.
   registra y compara `LinearRegression` y `RandomForestRegressor` con los mismos
   datos, features y métrica; distingue runs, parámetros, métricas, datasets y
   artifacts sin adelantar Model Registry.
+- [Clase 11 — Model Registry con MLflow](clase-11-model-registry.ipynb):
+  retoma autologging, compara dos candidatos mediante parent y child runs, y
+  recorre de forma interactiva el registro, versionado y carga mediante los
+  aliases `champion` y `challenger`.

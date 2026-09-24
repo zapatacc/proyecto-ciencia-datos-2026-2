@@ -19,7 +19,7 @@ serving y diseño inicial, por lo que no se repiten como tres sesiones aisladas.
 | 9 | 9 | Lun 14 sep | Primera entrega del proyecto hasta las 19:55; [tres niveles del software de ML: datos, modelo y código](../modulo-02-ciclo-mlops/clase-09-niveles-software-ml.ipynb) |
 | 10 | — | Mié 16 sep | Festivo — sin clase ni entrega |
 | 11 | 10 | Lun 21 sep | [Experiment tracking con MLflow](../modulo-02-ciclo-mlops/clase-10-experiment-tracking.ipynb) |
-| 12 | 11 | Mié 23 sep | Quiz sobre las clases 8–10 al inicio; Model Registry |
+| 12 | 11 | Mié 23 sep | Quiz 3 sobre las clases 8–10 al inicio; [Model Registry con MLflow](../modulo-02-ciclo-mlops/clase-11-model-registry.ipynb) |
 | 13 | 12 | Lun 28 sep | MLflow y Databricks |
 | 14 | 13 | Mié 30 sep | Asesoría 1 |
 | 15 | 14 | Lun 5 oct | Pipelines de ML |
