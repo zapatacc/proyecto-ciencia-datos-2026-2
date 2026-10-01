@@ -7,6 +7,9 @@ identificarse y mantenerse. Las clases 8 y 9 establecen el ciclo, los tres
 niveles, las interfaces y los patrones iniciales; la Clase 10 incorpora
 trazabilidad de experimentos con MLflow y la Clase 11 convierte los modelos
 seleccionados en versiones identificables dentro de Model Registry.
+La Clase 12 guía primero la creación de una cuenta Databricks Free Edition y
+usa tuning de hiperparámetros como caso para trasladar ese recorrido a su
+servidor administrado de MLflow.
 
 ## Clases disponibles
 
@@ -26,3 +29,8 @@ seleccionados en versiones identificables dentro de Model Registry.
   retoma autologging, compara dos candidatos mediante parent y child runs, y
   recorre de forma interactiva el registro, versionado y carga mediante los
   aliases `champion` y `challenger`.
+- [Clase 12 — Tuning de hiperparámetros con MLflow y Databricks](clase-12-mlflow-databricks.ipynb):
+  crea o recupera una cuenta Free Edition, compara las configuraciones local y
+  remota de Tracking, ajusta Linear Regression y Random Forest mediante parent
+  y child runs, y registra en Unity Catalog los dos modelos finales del mismo
+  caso Green Taxi.

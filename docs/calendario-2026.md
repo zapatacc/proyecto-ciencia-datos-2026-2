@@ -20,9 +20,9 @@ serving y diseño inicial, por lo que no se repiten como tres sesiones aisladas.
 | 10 | — | Mié 16 sep | Festivo — sin clase ni entrega |
 | 11 | 10 | Lun 21 sep | [Experiment tracking con MLflow](../modulo-02-ciclo-mlops/clase-10-experiment-tracking.ipynb) |
 | 12 | 11 | Mié 23 sep | Quiz 3 sobre las clases 8–10 al inicio; [Model Registry con MLflow](../modulo-02-ciclo-mlops/clase-11-model-registry.ipynb) |
-| 13 | 12 | Lun 28 sep | MLflow y Databricks |
+| 13 | 12 | Lun 28 sep | [Tuning de hiperparámetros con MLflow y Databricks](../modulo-02-ciclo-mlops/clase-12-mlflow-databricks.ipynb) |
 | 14 | 13 | Mié 30 sep | Asesoría 1 |
-| 15 | 14 | Lun 5 oct | Pipelines de ML |
+| 15 | 14 | Lun 5 oct | Tarea 5 hasta las 19:55; Pipelines de ML |
 | 16 | 15 | Mié 7 oct | MLflow Model Serving, FastAPI y Streamlit |
 | 17 | — | Lun 12 oct | Festivo — sin clase ni entrega |
 | 18 | 16 | Mié 14 oct | Introducción a Docker |
