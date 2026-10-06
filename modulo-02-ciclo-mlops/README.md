@@ -9,7 +9,9 @@ trazabilidad de experimentos con MLflow y la Clase 11 convierte los modelos
 seleccionados en versiones identificables dentro de Model Registry.
 La Clase 12 guía primero la creación de una cuenta Databricks Free Edition y
 usa tuning de hiperparámetros como caso para trasladar ese recorrido a su
-servidor administrado de MLflow.
+servidor administrado de MLflow. La secuencia continúa con Pipelines en la
+Clase 13, serving local en la Clase 14 y una asesoría de integración del
+proyecto en la Clase 15.
 
 ## Clases disponibles
 
@@ -34,3 +36,13 @@ servidor administrado de MLflow.
   remota de Tracking, ajusta Linear Regression y Random Forest mediante parent
   y child runs, y registra en Unity Catalog los dos modelos finales del mismo
   caso Green Taxi.
+
+## Próximas clases
+
+- **[Clase 13 — Pipelines de ML con Prefect](clase-13-pipelines.ipynb):**
+  orquesta descarga, preparación, HPO activable, evaluación y ranking sin
+  permitir que abril participe en el tuning.
+- **Clase 14 — MLflow Model Serving, FastAPI y Streamlit:** sirve un MLflow
+  Model, compara contratos y conecta un consumidor.
+- **Clase 15 — Asesoría 1:** revisa la integración y arquitectura de cada
+  proyecto antes de comenzar el bloque de contenedores.

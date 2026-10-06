@@ -1,10 +1,11 @@
 # Calendario — Otoño 2026
 
 Horario efectivo: 20:10–21:50. **Bloque** conserva las 32 fechas
-institucionales; **clase** cuenta sólo los encuentros reales. Los festivos no
-incluyen clase ni entrega. El calendario se ajusta conforme se implementa el
-curso: las clases 8 y 9 ya cubrieron sustancialmente interfaces, patrones de
-serving y diseño inicial, por lo que no se repiten como tres sesiones aisladas.
+institucionales; **clase** cuenta sólo los encuentros reales. Los festivos y la
+sesión cancelada del 28 de septiembre no incluyen clase. El calendario se
+ajusta conforme se implementa el curso: las clases 8 y 9 ya cubrieron
+sustancialmente interfaces, patrones de serving y diseño inicial, por lo que no
+se repiten como tres sesiones aisladas.
 
 | Bloque | Clase | Fecha | Tema |
 |---:|---:|---|---|
@@ -20,25 +21,27 @@ serving y diseño inicial, por lo que no se repiten como tres sesiones aisladas.
 | 10 | — | Mié 16 sep | Festivo — sin clase ni entrega |
 | 11 | 10 | Lun 21 sep | [Experiment tracking con MLflow](../modulo-02-ciclo-mlops/clase-10-experiment-tracking.ipynb) |
 | 12 | 11 | Mié 23 sep | Quiz 3 sobre las clases 8–10 al inicio; [Model Registry con MLflow](../modulo-02-ciclo-mlops/clase-11-model-registry.ipynb) |
-| 13 | 12 | Lun 28 sep | [Tuning de hiperparámetros con MLflow y Databricks](../modulo-02-ciclo-mlops/clase-12-mlflow-databricks.ipynb) |
-| 14 | 13 | Mié 30 sep | Asesoría 1 |
-| 15 | 14 | Lun 5 oct | Tarea 5 hasta las 19:55; Pipelines de ML |
-| 16 | 15 | Mié 7 oct | MLflow Model Serving, FastAPI y Streamlit |
+| 13 | — | Lun 28 sep | Sesión cancelada — sin clase |
+| 14 | 12 | Mié 30 sep | [Tuning de hiperparámetros con MLflow y Databricks](../modulo-02-ciclo-mlops/clase-12-mlflow-databricks.ipynb) |
+| 15 | 13 | Lun 5 oct | Tarea 5 hasta las 19:55; [Pipelines de ML con Prefect](../modulo-02-ciclo-mlops/clase-13-pipelines.ipynb) |
+| 16 | 14 | Mié 7 oct | Quiz 4 sobre las clases 11–13 al inicio; MLflow Model Serving, FastAPI y Streamlit |
 | 17 | — | Lun 12 oct | Festivo — sin clase ni entrega |
-| 18 | 16 | Mié 14 oct | Introducción a Docker |
-| 19 | 17 | Lun 19 oct | Contenerizar la API |
-| 20 | 18 | Mié 21 oct | Redes y Docker Compose |
-| 21 | 19 | Lun 26 oct | Streamlit en Hugging Face Spaces |
-| 22 | 20 | Mié 28 oct | Fundamentos de cloud computing |
-| 23 | 21 | Lun 2 nov | Introducción guiada a AWS |
-| 24 | 22 | Mié 4 nov | Asesoría 2 |
-| 25 | 23 | Lun 9 nov | Operación básica |
-| 26 | 24 | Mié 11 nov | Bloque flexible — se define según el avance del proyecto |
+| 18 | 15 | Mié 14 oct | Asesoría 1 — integración y arquitectura del proyecto |
+| 19 | 16 | Lun 19 oct | Introducción a Docker |
+| 20 | 17 | Mié 21 oct | Contenerizar la API |
+| 21 | 18 | Lun 26 oct | Redes y Docker Compose |
+| 22 | 19 | Mié 28 oct | Streamlit en Hugging Face Spaces |
+| 23 | 20 | Lun 2 nov | Fundamentos de cloud computing |
+| 24 | 21 | Mié 4 nov | Introducción guiada a AWS |
+| 25 | 22 | Lun 9 nov | Asesoría 2 |
+| 26 | 23 | Mié 11 nov | Operación básica |
 | 27 | — | Lun 16 nov | Festivo — sin clase ni entrega |
-| 28 | 25 | Mié 18 nov | Asesoría 3 |
-| 29 | 26 | Lun 23 nov | Bloque flexible — se define según el avance del proyecto |
-| 30 | 27 | Mié 25 nov | Bloque flexible — se define según el avance del proyecto |
-| 31 | 28 | Lun 30 nov | Presentaciones A |
-| 32 | 29 | Mié 2 dic | Presentaciones B y cierre |
+| 28 | 24 | Mié 18 nov | Bloque flexible — se define según el avance del proyecto |
+| 29 | 25 | Lun 23 nov | Asesoría 3 |
+| 30 | 26 | Mié 25 nov | Bloque flexible — se define según el avance del proyecto |
+| 31 | 27 | Lun 30 nov | Presentaciones A |
+| 32 | 28 | Mié 2 dic | Presentaciones B y cierre |
 
-Las horas límite de las entregas se publicarán en Canvas. No se programarán entregas en los bloques festivos.
+La Tarea 6 cierra el viernes 9 de octubre a las 19:55, hora de la Ciudad de
+México. Las demás horas límite se publicarán en Canvas. No se programarán
+entregas en los bloques festivos.
