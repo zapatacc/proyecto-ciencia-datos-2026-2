@@ -37,12 +37,15 @@ proyecto en la Clase 15.
   y child runs, y registra en Unity Catalog los dos modelos finales del mismo
   caso Green Taxi.
 
-## Próximas clases
-
-- **[Clase 13 — Pipelines de ML con Prefect](clase-13-pipelines.ipynb):**
+- [Clase 13 — Pipelines de ML con Prefect](clase-13-pipelines.ipynb):
   orquesta descarga, preparación, HPO activable, evaluación y ranking sin
   permitir que abril participe en el tuning.
-- **Clase 14 — MLflow Model Serving, FastAPI y Streamlit:** sirve un MLflow
-  Model, compara contratos y conecta un consumidor.
+- [Clase 14 — Model as a Service y Streamlit](clase-14-model-service-streamlit.ipynb):
+  sirve localmente el `champion` producido por la Clase 13, compara el contrato
+  estándar de MLflow con una API FastAPI propia y conecta Streamlit como
+  consumidor; cierra con la depuración local de una API con cinco errores.
+
+## Próximas clases
+
 - **Clase 15 — Asesoría 1:** revisa la integración y arquitectura de cada
   proyecto antes de comenzar el bloque de contenedores.

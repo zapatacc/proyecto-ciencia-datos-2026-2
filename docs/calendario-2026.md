@@ -24,7 +24,7 @@ se repiten como tres sesiones aisladas.
 | 13 | — | Lun 28 sep | Sesión cancelada — sin clase |
 | 14 | 12 | Mié 30 sep | [Tuning de hiperparámetros con MLflow y Databricks](../modulo-02-ciclo-mlops/clase-12-mlflow-databricks.ipynb) |
 | 15 | 13 | Lun 5 oct | Tarea 5 hasta las 19:55; [Pipelines de ML con Prefect](../modulo-02-ciclo-mlops/clase-13-pipelines.ipynb) |
-| 16 | 14 | Mié 7 oct | Quiz 4 sobre las clases 11–13 al inicio; MLflow Model Serving, FastAPI y Streamlit |
+| 16 | 14 | Mié 7 oct | Quiz 4 sobre las clases 11–13 al inicio; [Model as a Service con MLflow, FastAPI y Streamlit](../modulo-02-ciclo-mlops/clase-14-model-service-streamlit.ipynb) |
 | 17 | — | Lun 12 oct | Festivo — sin clase ni entrega |
 | 18 | 15 | Mié 14 oct | Asesoría 1 — integración y arquitectura del proyecto |
 | 19 | 16 | Lun 19 oct | Introducción a Docker |
