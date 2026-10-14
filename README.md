@@ -8,7 +8,11 @@ Material activo del curso **Proyecto en Ciencia de Datos**. El semestre recorre 
 2. **Del modelo al producto: diseño y trazabilidad MLOps** (`modulo-02-ciclo-mlops/`).
 3. **De local a producción: contenedores, nube y operación** (`modulo-03-produccion/`).
 
-La orientación principal para estudiantes está en [`docs/guia-de-aprendizaje.md`](docs/guia-de-aprendizaje.md). Las fechas viven en [`docs/calendario-2026.md`](docs/calendario-2026.md) y el procedimiento de entrega en [`docs/flujo-tareas.md`](docs/flujo-tareas.md).
+La orientación principal para estudiantes está en [`docs/guia-de-aprendizaje/`](docs/guia-de-aprendizaje/README.md). Las fechas viven en [`docs/calendario-2026.md`](docs/calendario-2026.md), el procedimiento de entrega en [`docs/flujo-tareas.md`](docs/flujo-tareas.md) y las políticas complementarias en [`docs/guia-de-aprendizaje/syllabus.md`](docs/guia-de-aprendizaje/syllabus.md).
+
+La [Guía del proyecto](project/README.md) reúne el recorrido del trabajo en
+equipo, la estructura del informe y las comprobaciones desde los datos hasta
+la aplicación publicada. Continúa la orientación iniciada en la Clase 7.
 
 ## Cómo utilizar este repositorio
 
@@ -67,6 +71,7 @@ labs/
 └── trabajo-local/       # prácticas locales ignoradas por Git
 assets/                  # recursos visuales organizados por módulo y clase
 docs/                    # calendario, políticas, guías y tareas
+project/                 # guía del proyecto y recursos de asesoría
 ```
 
 Los notebooks y materiales disponibles se enlazan progresivamente desde el [calendario del curso](docs/calendario-2026.md) y los README de cada módulo.

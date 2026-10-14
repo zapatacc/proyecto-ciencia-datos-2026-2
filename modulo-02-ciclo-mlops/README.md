@@ -10,7 +10,7 @@ seleccionados en versiones identificables dentro de Model Registry.
 La Clase 12 guía primero la creación de una cuenta Databricks Free Edition y
 usa tuning de hiperparámetros como caso para trasladar ese recorrido a su
 servidor administrado de MLflow. La secuencia continúa con Pipelines en la
-Clase 13, serving local en la Clase 14 y una asesoría de integración del
+Clase 13, serving local en la Clase 14 y trabajo de integración del
 proyecto en la Clase 15.
 
 ## Clases disponibles
@@ -45,7 +45,8 @@ proyecto en la Clase 15.
   estándar de MLflow con una API FastAPI propia y conecta Streamlit como
   consumidor; cierra con la depuración local de una API con cinco errores.
 
-## Próximas clases
-
-- **Clase 15 — Asesoría 1:** revisa la integración y arquitectura de cada
-  proyecto antes de comenzar el bloque de contenedores.
+- [Clase 15 — Trabajo en el proyecto](clase-15-trabajo-proyecto.ipynb):
+  trabajo en equipo para completar modelos con HPO, pipeline, MLflow remoto,
+  API y frontend. La [Tarea 7](../docs/tareas/tarea-07-segunda-entrega-proyecto.md)
+  define la segunda entrega y la [Guía del proyecto](../project/README.md)
+  conserva el recorrido completo.
