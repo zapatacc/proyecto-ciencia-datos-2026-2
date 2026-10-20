@@ -27,8 +27,8 @@ se repiten como tres sesiones aisladas.
 | 16 | 14 | Mié 7 oct | Quiz 4 sobre las clases 11–13 al inicio; [Model as a Service con MLflow, FastAPI y Streamlit](../modulo-02-ciclo-mlops/clase-14-model-service-streamlit.ipynb) |
 | 17 | — | Lun 12 oct | Festivo — sin clase ni entrega |
 | 18 | 15 | Mié 14 oct | [Trabajo en el proyecto](../modulo-02-ciclo-mlops/clase-15-trabajo-proyecto.ipynb) |
-| 19 | 16 | Lun 19 oct | Introducción a Docker |
-| 20 | 17 | Mié 21 oct | [Segunda entrega del proyecto](tareas/tarea-07-segunda-entrega-proyecto.md) hasta las 19:55; contenerizar la API |
+| 19 | 16 | Lun 19 oct | [Docker: API, contexto de construcción y panorama de Compose](../modulo-03-produccion/clase-16-docker.ipynb) |
+| 20 | 17 | Mié 21 oct | [Segunda entrega del proyecto](tareas/tarea-07-segunda-entrega-proyecto.md) hasta las 19:55; integración y diagnóstico con Docker; redes según avance |
 | 21 | 18 | Lun 26 oct | Redes y Docker Compose |
 | 22 | 19 | Mié 28 oct | Streamlit en Hugging Face Spaces |
 | 23 | 20 | Lun 2 nov | Fundamentos de cloud computing |

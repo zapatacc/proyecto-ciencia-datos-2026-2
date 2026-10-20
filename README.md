@@ -6,7 +6,7 @@ Material activo del curso **Proyecto en Ciencia de Datos**. El semestre recorre 
 
 1. **Fundamentos para construir y compartir aplicaciones de datos** (`modulo-01-fundamentos/`).
 2. **Del modelo al producto: diseño y trazabilidad MLOps** (`modulo-02-ciclo-mlops/`).
-3. **De local a producción: contenedores, nube y operación** (`modulo-03-produccion/`).
+3. **[De local a producción: contenedores, nube y operación](modulo-03-produccion/README.md)** (`modulo-03-produccion/`).
 
 La orientación principal para estudiantes está en [`docs/guia-de-aprendizaje/`](docs/guia-de-aprendizaje/README.md). Las fechas viven en [`docs/calendario-2026.md`](docs/calendario-2026.md), el procedimiento de entrega en [`docs/flujo-tareas.md`](docs/flujo-tareas.md) y las políticas complementarias en [`docs/guia-de-aprendizaje/syllabus.md`](docs/guia-de-aprendizaje/syllabus.md).
 

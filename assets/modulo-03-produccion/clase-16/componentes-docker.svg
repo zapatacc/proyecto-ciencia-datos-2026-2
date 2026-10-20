@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="300" viewBox="0 0 1000 300" role="img" aria-labelledby="title desc">
+<title id="title">Componentes de Docker</title><desc id="desc">El cliente pide operaciones al motor. El motor obtiene imágenes del registro y crea contenedores.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#334155"/></marker></defs>
+<rect width="1000" height="300" fill="#fff"/>
+<g font-family="Arial, sans-serif" fill="#172033">
+<rect x="20" y="95" width="200" height="110" rx="12" fill="#eef5fb" stroke="#334155" stroke-width="2"/>
+<text x="120.0" y="135" font-size="21" text-anchor="middle">Cliente Docker</text>
+<text x="120.0" y="167" font-size="17" text-anchor="middle">docker build / run</text>
+<rect x="340" y="95" width="250" height="110" rx="12" fill="#eef5fb" stroke="#334155" stroke-width="2"/>
+<text x="465.0" y="135" font-size="21" text-anchor="middle">Motor Docker</text>
+<text x="465.0" y="167" font-size="17" text-anchor="middle">imágenes y contenedores</text>
+<rect x="735" y="95" width="240" height="110" rx="12" fill="#eef5fb" stroke="#334155" stroke-width="2"/>
+<text x="855.0" y="135" font-size="21" text-anchor="middle">Registro</text>
+<text x="855.0" y="167" font-size="17" text-anchor="middle">por ejemplo Docker Hub</text>
+<path d="M220,150 L340,150" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="280.0" y="138" font-size="16" text-anchor="middle">solicita</text>
+<path d="M735,150 L590,150" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="662.5" y="138" font-size="16" text-anchor="middle">descarga</text>
+</g></svg>
