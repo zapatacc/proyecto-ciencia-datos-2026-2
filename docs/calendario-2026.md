@@ -27,16 +27,16 @@ se repiten como tres sesiones aisladas.
 | 16 | 14 | Mié 7 oct | Quiz 4 sobre las clases 11–13 al inicio; [Model as a Service con MLflow, FastAPI y Streamlit](../modulo-02-ciclo-mlops/clase-14-model-service-streamlit.ipynb) |
 | 17 | — | Lun 12 oct | Festivo — sin clase ni entrega |
 | 18 | 15 | Mié 14 oct | [Trabajo en el proyecto](../modulo-02-ciclo-mlops/clase-15-trabajo-proyecto.ipynb) |
-| 19 | 16 | Lun 19 oct | [Docker: API, contexto de construcción y panorama de Compose](../modulo-03-produccion/clase-16-docker.ipynb) |
-| 20 | 17 | Mié 21 oct | [Segunda entrega del proyecto](tareas/tarea-07-segunda-entrega-proyecto.md) hasta las 19:55; integración y diagnóstico con Docker; redes según avance |
-| 21 | 18 | Lun 26 oct | Redes y Docker Compose |
-| 22 | 19 | Mié 28 oct | Streamlit en Hugging Face Spaces |
-| 23 | 20 | Lun 2 nov | Fundamentos de cloud computing |
-| 24 | 21 | Mié 4 nov | Introducción guiada a AWS |
+| 19 | 16 | Lun 19 oct | Asesoría y trabajo en la segunda entrega del proyecto |
+| 20 | 17 | Mié 21 oct | [Segunda entrega del proyecto](tareas/tarea-07-segunda-entrega-proyecto.md) hasta las 19:55; [introducción a contenedores y Docker](../modulo-03-produccion/clase-17-docker.ipynb) |
+| 21 | 18 | Lun 26 oct | Práctica e integración con Docker: API, caché y diagnóstico; redes según avance |
+| 22 | 19 | Mié 28 oct | Redes y Docker Compose |
+| 23 | 20 | Lun 2 nov | Streamlit en Hugging Face Spaces |
+| 24 | 21 | Mié 4 nov | Fundamentos de cloud computing |
 | 25 | 22 | Lun 9 nov | Asesoría 2 |
-| 26 | 23 | Mié 11 nov | Operación básica |
+| 26 | 23 | Mié 11 nov | Introducción guiada a AWS |
 | 27 | — | Lun 16 nov | Festivo — sin clase ni entrega |
-| 28 | 24 | Mié 18 nov | Bloque flexible — se define según el avance del proyecto |
+| 28 | 24 | Mié 18 nov | Operación básica y diagnóstico del proyecto |
 | 29 | 25 | Lun 23 nov | Asesoría 3 |
 | 30 | 26 | Mié 25 nov | Bloque flexible — se define según el avance del proyecto |
 | 31 | 27 | Lun 30 nov | Presentaciones A |
