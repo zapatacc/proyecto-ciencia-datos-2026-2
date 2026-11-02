@@ -29,8 +29,8 @@ se repiten como tres sesiones aisladas.
 | 18 | 15 | Mié 14 oct | [Trabajo en el proyecto](../modulo-02-ciclo-mlops/clase-15-trabajo-proyecto.ipynb) |
 | 19 | 16 | Lun 19 oct | Asesoría y trabajo en la segunda entrega del proyecto |
 | 20 | 17 | Mié 21 oct | [Segunda entrega del proyecto](tareas/tarea-07-segunda-entrega-proyecto.md) hasta las 19:55; [introducción a contenedores y Docker](../modulo-03-produccion/clase-17-docker.ipynb) |
-| 21 | 18 | Lun 26 oct | Práctica e integración con Docker: API, caché y diagnóstico; redes según avance |
-| 22 | 19 | Mié 28 oct | Redes y Docker Compose |
+| 21 | 18 | Lun 26 oct | [Práctica Docker](../modulo-03-produccion/clase-17-docker.ipynb): API y frontend; inicio de conexión entre contenedores |
+| 22 | 19 | Mié 28 oct | [Docker Network host y Docker Compose: conectar API y Streamlit](../modulo-03-produccion/clase-19-compose.ipynb) |
 | 23 | 20 | Lun 2 nov | Streamlit en Hugging Face Spaces |
 | 24 | 21 | Mié 4 nov | Fundamentos de cloud computing |
 | 25 | 22 | Lun 9 nov | Asesoría 2 |
