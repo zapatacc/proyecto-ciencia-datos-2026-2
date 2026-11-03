@@ -15,5 +15,6 @@ el Dockerfile y `.dockerignore` se construyen siguiendo el notebook.
 La Clase 19 continúa en `labs/trabajo-local/clase-16/`, con las carpetas `api/` y `ui/` ya construidas, y completa su `docker-compose.yaml`.
 
 La práctica de Clase 20 es individual. Reutiliza la aplicación de
-`labs/trabajo-local/clase-16/`, con `.env` junto a `docker-compose.yaml`,
-y despliega una instancia EC2 por estudiante.
+`labs/trabajo-local/clase-16/`: guarda API, UI y Compose en
+`pcd-entregas-2026/actividades/clase-20-ec2/`, clona el repositorio en EC2 y crea
+allí el `.env` desde `.env.example`. Cada estudiante utiliza su propia instancia.

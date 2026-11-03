@@ -31,7 +31,7 @@ se repiten como tres sesiones aisladas.
 | 20 | 17 | Mié 21 oct | [Segunda entrega del proyecto](tareas/tarea-07-segunda-entrega-proyecto.md) hasta las 19:55; [introducción a contenedores y Docker](../modulo-03-produccion/clase-17-docker.ipynb) |
 | 21 | 18 | Lun 26 oct | [Práctica Docker](../modulo-03-produccion/clase-17-docker.ipynb): API y frontend; inicio de conexión entre contenedores |
 | 22 | 19 | Mié 28 oct | [Docker Network host y Docker Compose: conectar API y Streamlit](../modulo-03-produccion/clase-19-compose.ipynb) |
-| 23 | 20 | Lun 2 nov | [Despliegue en AWS con EC2 y Docker Compose](../modulo-03-produccion/clase-20-aws-ec2-compose.ipynb) |
+| 23 | 20 | Lun 2 nov | [Despliegue en AWS con EC2 y Docker Compose](../modulo-03-produccion/clase-20-aws-ec2-compose.ipynb): actividad individual desde el repositorio de entregas |
 | 24 | 21 | Mié 4 nov | Fundamentos de cloud computing |
 | 25 | 22 | Lun 9 nov | Asesoría 2 |
 | 26 | 23 | Mié 11 nov | Práctica de despliegue y recuperación en AWS |
