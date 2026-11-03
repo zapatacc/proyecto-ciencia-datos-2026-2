@@ -337,17 +337,17 @@ La integración local utiliza Docker y Compose para ejecutar y conectar API e
 interfaz. Documenten configuración, conexión entre servicios, arranque,
 comprobación y detención.
 
-La ruta mínima prevista de publicación es una aplicación Streamlit autocontenida
-mediante Docker en Hugging Face Spaces. El diseño local con API e interfaz
-separadas y el diseño publicado deben explicarse por separado. La aplicación
-publicada conserva el preprocesamiento y la versión identificable del modelo;
-no requiere reentrenar al recibir una entrada. Separar API e interfaz en dos
-Spaces es una extensión, no el requisito mínimo.
+La práctica de despliegue guiado es individual: cada estudiante utiliza una
+instancia Linux de AWS EC2, con FastAPI y Streamlit separados y ejecutados
+mediante Docker Compose.
+La aplicación conserva el preprocesamiento y la versión identificable del modelo;
+no requiere reentrenar al recibir una entrada.
 
-AWS forma parte de la introducción guiada a infraestructura y no es una ruta
-obligatoria del proyecto. No se exige contratar servicios ni aportar una
-tarjeta personal. Las alternativas ante restricciones de acceso se acuerdan
-con el profesor.
+Los accesos al entorno se proporcionan mediante el profesor. No se exige
+contratar servicios ni aportar una tarjeta personal. Mantengan secretos fuera
+del código y utilicen únicamente los recursos asignados. Las
+alternativas ante restricciones de acceso se acuerdan con el profesor.
+El alcance evaluable de cada entrega se establece en su consigna de Canvas.
 
 Documenten cómo observar errores, actualizar la aplicación o el modelo,
 comprobar la versión activa y recuperar una versión anterior.
