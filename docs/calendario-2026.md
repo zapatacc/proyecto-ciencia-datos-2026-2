@@ -32,16 +32,18 @@ se repiten como tres sesiones aisladas.
 | 21 | 18 | Lun 26 oct | [Práctica Docker](../modulo-03-produccion/clase-17-docker.ipynb): API y frontend; inicio de conexión entre contenedores |
 | 22 | 19 | Mié 28 oct | [Docker Network host y Docker Compose: conectar API y Streamlit](../modulo-03-produccion/clase-19-compose.ipynb) |
 | 23 | 20 | Lun 2 nov | [Despliegue en AWS con EC2 y Docker Compose](../modulo-03-produccion/clase-20-aws-ec2-compose.ipynb): actividad individual desde el repositorio de entregas |
-| 24 | 21 | Mié 4 nov | Fundamentos de cloud computing |
-| 25 | 22 | Lun 9 nov | Asesoría 2 |
-| 26 | 23 | Mié 11 nov | Práctica de despliegue y recuperación en AWS |
+| 24 | 21 | Mié 4 nov | [Asesoría de la Tarea 8](../modulo-03-produccion/clase-21-asesoria-proyecto.ipynb), trabajo en clase sin entregable y [asignación del examen final](tareas/examen-final-2026/README.md) |
+| 25 | 22 | Lun 9 nov | Trabajo autónomo en el examen final |
+| 26 | 23 | Mié 11 nov | Entrega del examen final hasta las 19:55 y sustentaciones individuales en T-105 (8 minutos por estudiante; horario individual en Canvas) |
 | 27 | — | Lun 16 nov | Festivo — sin clase ni entrega |
-| 28 | 24 | Mié 18 nov | Operación básica y diagnóstico del proyecto |
-| 29 | 25 | Lun 23 nov | Asesoría 3 |
-| 30 | 26 | Mié 25 nov | Bloque flexible — se define según el avance del proyecto |
-| 31 | 27 | Lun 30 nov | Presentaciones A |
-| 32 | 28 | Mié 2 dic | Presentaciones B y cierre |
+| 28 | 24 | Mié 18 nov | [Tercera entrega del proyecto](tareas/tarea-08-tercera-entrega-proyecto.md) hasta las 19:55; monitoreo complementario y avance del proyecto |
+| 29 | 25 | Lun 23 nov | Asesoría y trabajo de cierre del proyecto |
+| 30 | 26 | Mié 25 nov | Actualización y rollback (complementario); taller de cierre del proyecto |
+| 31 | 27 | Lun 30 nov | Presentaciones del proyecto final |
+| 32 | 28 | Mié 2 dic | Retroalimentación, temas de continuidad y cierre de recursos AWS |
 
 La Tarea 6 cierra el viernes 9 de octubre a las 19:55, hora de la Ciudad de
 México. Las demás horas límite se publicarán en Canvas. No se programarán
 entregas en los bloques festivos.
+
+Después del laboratorio de AWS, los contenidos complementarios son de enriquecimiento y no se incorporan a los requisitos del examen o del proyecto. La asignación, las fechas de entrega y los horarios individuales del examen se consultan en Canvas.
