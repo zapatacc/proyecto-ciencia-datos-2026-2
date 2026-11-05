@@ -343,6 +343,8 @@ mediante Docker Compose.
 La aplicación conserva el preprocesamiento y la versión identificable del modelo;
 no requiere reentrenar al recibir una entrada.
 
+Para la [tercera entrega — Tarea 8](../docs/tareas/tarea-08-tercera-entrega-proyecto.md), el equipo despliega su proyecto en **una sola instancia ya asignada a uno de sus integrantes**, en `us-east-1`. No creen una instancia por integrante. Una persona administra EC2 con sus propios accesos; todos colaboran y comprenden el sistema. Si cambia la IP pública de la computadora administradora, actualicen el origen SSH del grupo de seguridad a la IP actual, manteniendo acceso limitado.
+
 Los accesos al entorno se proporcionan mediante el profesor. No se exige
 contratar servicios ni aportar una tarjeta personal. Mantengan secretos fuera
 del código y utilicen únicamente los recursos asignados. Las
