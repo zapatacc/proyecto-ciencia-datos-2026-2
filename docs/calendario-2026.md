@@ -37,8 +37,8 @@ se repiten como tres sesiones aisladas.
 | 26 | 23 | Mié 11 nov | Entrega del examen final hasta las 19:55 y sustentaciones individuales en T-105 (8 minutos por estudiante; horario individual en Canvas) |
 | 27 | — | Lun 16 nov | Festivo — sin clase ni entrega |
 | 28 | 24 | Mié 18 nov | [Tercera entrega del proyecto](tareas/tarea-08-tercera-entrega-proyecto.md) hasta las 19:55; [laboratorios de MLOps por equipo](../modulo-03-produccion/clase-24-laboratorios-mlops.ipynb) |
-| 29 | 25 | Lun 23 nov | Asesoría y trabajo de cierre del proyecto; continuación de los laboratorios de MLOps según el avance |
-| 30 | 26 | Mié 25 nov | Actualización y rollback (complementario); taller de cierre del proyecto |
+| 29 | 25 | Lun 23 nov | Presentaciones de los [laboratorios de MLOps](tareas/laboratorios-mlops/README.md). Consulten el límite de entrega en Canvas. |
+| 30 | 26 | Mié 25 nov | Asesoría. Si queda algún equipo por presentar, continuación de las presentaciones de los laboratorios de MLOps. |
 | 31 | 27 | Lun 30 nov | Primera opción para presentar el proyecto final. Si el grupo elige el 2 de diciembre, asesoría sobre la retroalimentación de la tercera entrega. |
 | 32 | 28 | Mié 2 dic | Segunda opción para presentar el proyecto final. Si el grupo presenta el 30 de noviembre, retroalimentación y cierre. |
 
