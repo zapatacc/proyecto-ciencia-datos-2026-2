@@ -36,14 +36,14 @@ se repiten como tres sesiones aisladas.
 | 25 | 22 | Lun 9 nov | Trabajo autónomo en el examen final |
 | 26 | 23 | Mié 11 nov | Entrega del examen final hasta las 19:55 y sustentaciones individuales en T-105 (8 minutos por estudiante; horario individual en Canvas) |
 | 27 | — | Lun 16 nov | Festivo — sin clase ni entrega |
-| 28 | 24 | Mié 18 nov | [Tercera entrega del proyecto](tareas/tarea-08-tercera-entrega-proyecto.md) hasta las 19:55; monitoreo complementario y avance del proyecto |
-| 29 | 25 | Lun 23 nov | Asesoría y trabajo de cierre del proyecto |
+| 28 | 24 | Mié 18 nov | [Tercera entrega del proyecto](tareas/tarea-08-tercera-entrega-proyecto.md) hasta las 19:55; [laboratorios de MLOps por equipo](../modulo-03-produccion/clase-24-laboratorios-mlops.ipynb) |
+| 29 | 25 | Lun 23 nov | Asesoría y trabajo de cierre del proyecto; continuación de los laboratorios de MLOps según el avance |
 | 30 | 26 | Mié 25 nov | Actualización y rollback (complementario); taller de cierre del proyecto |
-| 31 | 27 | Lun 30 nov | Presentaciones del proyecto final |
-| 32 | 28 | Mié 2 dic | Retroalimentación, temas de continuidad y cierre de recursos AWS |
+| 31 | 27 | Lun 30 nov | Primera opción para presentar el proyecto final. Si el grupo elige el 2 de diciembre, asesoría sobre la retroalimentación de la tercera entrega. |
+| 32 | 28 | Mié 2 dic | Segunda opción para presentar el proyecto final. Si el grupo presenta el 30 de noviembre, retroalimentación y cierre. |
 
 La Tarea 6 cierra el viernes 9 de octubre a las 19:55, hora de la Ciudad de
 México. Las demás horas límite se publicarán en Canvas. No se programarán
 entregas en los bloques festivos.
 
-Después del laboratorio de AWS, los contenidos complementarios son de enriquecimiento y no se incorporan a los requisitos del examen o del proyecto. La asignación, las fechas de entrega y los horarios individuales del examen se consultan en Canvas.
+Los [laboratorios de MLOps](tareas/laboratorios-mlops/README.md) se califican como actividad por equipo. Las fechas de las entregas y los horarios individuales del examen se consultan en Canvas.

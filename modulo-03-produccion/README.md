@@ -9,6 +9,7 @@ Este módulo conecta el sistema local de ML con contenedores, despliegue y opera
 | 19 | [Docker Network y Docker Compose](clase-19-compose.ipynb) | Conectar API y Streamlit con network host, conservar localhost y ejecutar la aplicación con Compose. |
 | 20 | [Despliegue en AWS con EC2 y Docker Compose](clase-20-aws-ec2-compose.ipynb) | Ejecutar API y Streamlit en Ubuntu, comprobar una predicción remota y detener la instancia. |
 | 21 | [Asesoría de la Tarea 8](clase-21-asesoria-proyecto.ipynb) | Trabajar en la tercera entrega: correcciones, integración, contenedores y despliegue del equipo. |
+| 24 | [Laboratorios de MLOps](clase-24-laboratorios-mlops.ipynb) | Implementar y comprobar una capacidad de operación de Green Taxi en un repositorio de equipo. |
 
 Las fechas y los temas previstos se consultan en el [calendario](../docs/calendario-2026.md).
 La práctica local utiliza los [recursos de API](../labs/starters/clase-16-docker/README.md);
@@ -20,6 +21,6 @@ La práctica de Clase 20 es individual. Reutiliza la aplicación de
 `pcd-entregas-2026/actividades/clase-20-ec2/`, clona el repositorio en EC2 y crea
 allí el `.env` desde `.env.example`. Cada estudiante utiliza su propia instancia.
 
-Después del laboratorio de AWS, las sesiones se concentran en el examen final y el cierre del proyecto. Los temas complementarios de nube, automatización, monitoreo y operación son de enriquecimiento; sus herramientas no se añaden a los requisitos de evaluación. Consulta el calendario y las instrucciones oficiales en Canvas.
+Los [laboratorios de MLOps](../docs/tareas/laboratorios-mlops/README.md) se evalúan mediante el repositorio, la documentación y los resultados del equipo. Consulta el calendario y las instrucciones oficiales en Canvas.
 
 La asesoría de Clase 21 cuenta como tarea por el trabajo activo, sin entregable adicional. La [Tarea 8 — Tercera entrega del proyecto](../docs/tareas/tarea-08-tercera-entrega-proyecto.md) define el recorrido hasta AWS: una instancia existente de un integrante por equipo.

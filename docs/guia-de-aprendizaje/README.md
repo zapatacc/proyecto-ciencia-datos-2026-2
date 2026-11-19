@@ -81,7 +81,7 @@ Cada clase relacionará cuatro elementos:
 
 ### Temas opcionales
 
-Si el tiempo y el avance del grupo lo permiten, se podrán explorar pruebas automatizadas, CI/CD, observabilidad y monitoreo, Prefect, seguridad de contenedores, fundamentos de Kubernetes, nube avanzada y continuous training. Si no se desarrollan en clase, se compartirán materiales y bibliografía para consulta y autoaprendizaje; no serán requisito de evaluación.
+Si el tiempo y el avance del grupo lo permiten, se podrán explorar pruebas automatizadas, CI/CD, observabilidad y monitoreo, Prefect, seguridad de contenedores, fundamentos de Kubernetes, nube avanzada y continuous training. La actividad de [laboratorios de MLOps](../tareas/laboratorios-mlops/README.md) evalúa el laboratorio asignado a cada equipo.
 
 ## 5. Evaluación del curso
 
