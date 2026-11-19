@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.env
+.env.*
+*.pem
+*.key
+*.log
+.prefect/
+datos/*.parquet
+datos/*.part

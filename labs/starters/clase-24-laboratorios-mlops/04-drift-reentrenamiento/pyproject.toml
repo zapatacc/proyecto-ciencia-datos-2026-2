@@ -1,0 +1,11 @@
+[project]
+name = "green-taxi-drift"
+version = "0.1.0"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "ipykernel>=6.29,<8",
+    "pandas>=2.2,<3",
+    "prefect>=3,<4",
+    "pyarrow>=18,<26",
+    "scikit-learn>=1.5,<2",
+]

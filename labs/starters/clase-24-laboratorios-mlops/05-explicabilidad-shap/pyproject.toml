@@ -1,0 +1,13 @@
+[project]
+name = "green-taxi-shap"
+version = "0.1.0"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "ipykernel>=6.29,<8",
+    "ipython>=8,<10",
+    "matplotlib>=3.9,<4",
+    "numpy>=2,<3",
+    "pandas>=2.2,<3",
+    "scikit-learn>=1.5,<2",
+    "shap>=0.49,<1",
+]

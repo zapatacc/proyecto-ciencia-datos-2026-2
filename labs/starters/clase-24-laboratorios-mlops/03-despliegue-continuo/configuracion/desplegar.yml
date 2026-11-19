@@ -1,0 +1,66 @@
+name: Desplegar Green Taxi en EC2
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/desplegar.yml
+      - .dockerignore
+      - Dockerfile
+      - compose.yaml
+      - '*.py'
+      - datos/green-taxi-train.csv
+      - operacion/**
+      - pyproject.toml
+      - uv.lock
+
+permissions:
+  contents: read
+
+concurrency:
+  group: green-taxi-lab03
+  cancel-in-progress: false
+
+jobs:
+  desplegar:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Transferir y verificar revisión
+        shell: bash
+        env:
+          EC2_HOST: ${{ vars.EC2_HOST }}
+          LAB_PORT: ${{ vars.LAB_PORT }}
+          EC2_SSH_KEY: ${{ secrets.EC2_SSH_KEY }}
+          EC2_KNOWN_HOSTS: ${{ secrets.EC2_KNOWN_HOSTS }}
+        run: |
+          [[ "$EC2_HOST" =~ ^[a-zA-Z0-9][a-zA-Z0-9.-]*$ ]]
+          [[ "$LAB_PORT" =~ ^[0-9]{4,5}$ ]]
+          [[ -n "$EC2_SSH_KEY" && -n "$EC2_KNOWN_HOSTS" ]]
+          umask 077
+          temporal=$(mktemp -d)
+          trap 'rm -rf "$temporal"' EXIT
+          printf '%s\n' "$EC2_SSH_KEY" > "$temporal/llave"
+          printf '%s\n' "$EC2_KNOWN_HOSTS" > "$temporal/known_hosts"
+          ssh_ec2=(ssh -i "$temporal/llave" -o BatchMode=yes -o IdentitiesOnly=yes
+            -o StrictHostKeyChecking=yes -o "UserKnownHostsFile=$temporal/known_hosts"
+            -o ConnectTimeout=15 "ubuntu@$EC2_HOST")
+
+          ruta="green-taxi-lab03/revisiones/$GITHUB_SHA"
+          git archive "$GITHUB_SHA" -- .dockerignore Dockerfile compose.yaml api.py \
+            entrenar.py modelos.py preparar_datos.py pyproject.toml uv.lock \
+            datos/green-taxi-train.csv operacion | "${ssh_ec2[@]}" \
+            "set -e; umask 077
+             mkdir -p green-taxi-lab03/revisiones
+             if [ -d '$ruta' ]; then
+               cat >/dev/null
+             else
+               temporal=\$(mktemp -d 'green-taxi-lab03/revisiones/.transferencia.XXXXXX')
+               trap 'rm -rf \"\$temporal\"' EXIT
+               tar -xf - -C \"\$temporal\"
+               mv \"\$temporal\" '$ruta'
+             fi"
+          "${ssh_ec2[@]}" "LAB_DOCKER_SUDO=1 bash '$ruta/operacion/activar.sh' \
+            green-taxi-lab03 '$GITHUB_SHA' '$LAB_PORT' desplegar"

@@ -1,0 +1,9 @@
+services:
+  api:
+    build: .
+    image: nyc-taxi-api-image:${REVISION:?Define REVISION}
+    container_name: nyc-taxi-api-container
+    environment:
+      REVISION: ${REVISION:?Define REVISION}
+    ports:
+      - "127.0.0.1:${LAB_PORT:?Define LAB_PORT}:8000"

@@ -1,0 +1,9 @@
+*
+!pyproject.toml
+!uv.lock
+!entrenar.py
+!api.py
+!modelos.py
+!preparar_datos.py
+!datos/
+!datos/green-taxi-train.csv

@@ -1,0 +1,35 @@
+name: Contrato de la API
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  verificar-api:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Descargar la revisión del PR
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Instalar uv
+        uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
+        with:
+          version: "0.12.5"
+      - name: Instalar el entorno bloqueado
+        run: uv sync --locked
+      - name: Arrancar y verificar la API
+        shell: bash
+        run: |
+          PORT=8000
+          uv run --locked python api_local.py --modelo linear_regression --puerto "$PORT" > api.log 2>&1 &
+          servidor=$!
+          trap 'kill "$servidor" 2>/dev/null || true' EXIT
+          uv run --locked python verificar_api.py --url "http://127.0.0.1:$PORT"
+      - name: Mostrar el registro del servidor si hubo una falla
+        if: failure()
+        run: test ! -f api.log || cat api.log
